@@ -22,6 +22,7 @@ export type TeamMember = {
   id: string;
   name: string;
   role: string;
+  phone: string | null;
   biography: string;
   image_url: string | null;
   is_published: boolean;
@@ -44,8 +45,8 @@ export const demoProjects: Project[] = [
 ];
 
 export const demoTeam: TeamMember[] = [
-  { id: "1", name: "Ahsanul Haque", role: "Managing Director", biography: "Guides HBL with a commitment to responsible growth, transparent partnerships, and homes that create long-term value.", image_url: null, is_published: true, sort_order: 1 },
-  { id: "2", name: "Farzana Rahman", role: "Director, Design & Planning", biography: "Leads the design process with a focus on thoughtful layouts, enduring materials, and the everyday needs of residents.", image_url: null, is_published: true, sort_order: 2 },
-  { id: "3", name: "Mahmudul Hasan", role: "Head of Engineering", biography: "Oversees construction quality, safety, and delivery through disciplined project controls and experienced site teams.", image_url: null, is_published: true, sort_order: 3 },
-  { id: "4", name: "Nusrat Jahan", role: "Head of Customer Experience", biography: "Ensures every buyer receives clear guidance, timely communication, and dependable support from enquiry to handover.", image_url: null, is_published: true, sort_order: 4 },
+  { id: "1", name: "Ahsanul Haque", role: "Managing Director", phone: "+880 1700-000101", biography: "Guides HBL with a commitment to responsible growth, transparent partnerships, and homes that create long-term value.", image_url: null, is_published: true, sort_order: 1 },
+  { id: "2", name: "Farzana Rahman", role: "Director, Design & Planning", phone: "+880 1700-000102", biography: "Leads the design process with a focus on thoughtful layouts, enduring materials, and the everyday needs of residents.", image_url: null, is_published: true, sort_order: 2 },
+  { id: "3", name: "Mahmudul Hasan", role: "Head of Engineering", phone: "+880 1700-000103", biography: "Oversees construction quality, safety, and delivery through disciplined project controls and experienced site teams.", image_url: null, is_published: true, sort_order: 3 },
+  { id: "4", name: "Nusrat Jahan", role: "Head of Customer Experience", phone: "+880 1700-000104", biography: "Ensures every buyer receives clear guidance, timely communication, and dependable support from enquiry to handover.", image_url: null, is_published: true, sort_order: 4 },
 ];
