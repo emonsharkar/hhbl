@@ -10,33 +10,114 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AdminRouteImport } from './routes/admin'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CorporateRouteImport } from './routes/corporate'
+import { Route as ManagementTeamRouteImport } from './routes/management-team'
+import { Route as ProjectsRouteImport } from './routes/projects'
+import { Route as ProjectsSlugRouteImport } from './routes/projects.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CorporateRoute = CorporateRouteImport.update({
+  id: '/corporate',
+  path: '/corporate',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ManagementTeamRoute = ManagementTeamRouteImport.update({
+  id: '/management-team',
+  path: '/management-team',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProjectsRoute = ProjectsRouteImport.update({
+  id: '/projects',
+  path: '/projects',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProjectsSlugRoute = ProjectsSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => ProjectsRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
+  '/contact': typeof ContactRoute
+  '/corporate': typeof CorporateRoute
+  '/management-team': typeof ManagementTeamRoute
+  '/projects': typeof ProjectsRouteWithChildren
+  '/projects/$slug': typeof ProjectsSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
+  '/contact': typeof ContactRoute
+  '/corporate': typeof CorporateRoute
+  '/management-team': typeof ManagementTeamRoute
+  '/projects': typeof ProjectsRouteWithChildren
+  '/projects/$slug': typeof ProjectsSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
+  '/contact': typeof ContactRoute
+  '/corporate': typeof CorporateRoute
+  '/management-team': typeof ManagementTeamRoute
+  '/projects': typeof ProjectsRouteWithChildren
+  '/projects/$slug': typeof ProjectsSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/admin'
+    | '/contact'
+    | '/corporate'
+    | '/management-team'
+    | '/projects'
+    | '/projects/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/admin'
+    | '/contact'
+    | '/corporate'
+    | '/management-team'
+    | '/projects'
+    | '/projects/$slug'
+  id:
+    | '__root__'
+    | '/'
+    | '/admin'
+    | '/contact'
+    | '/corporate'
+    | '/management-team'
+    | '/projects'
+    | '/projects/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdminRoute: typeof AdminRoute
+  ContactRoute: typeof ContactRoute
+  CorporateRoute: typeof CorporateRoute
+  ManagementTeamRoute: typeof ManagementTeamRoute
+  ProjectsRoute: typeof ProjectsRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +129,70 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/corporate': {
+      id: '/corporate'
+      path: '/corporate'
+      fullPath: '/corporate'
+      preLoaderRoute: typeof CorporateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/management-team': {
+      id: '/management-team'
+      path: '/management-team'
+      fullPath: '/management-team'
+      preLoaderRoute: typeof ManagementTeamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/projects': {
+      id: '/projects'
+      path: '/projects'
+      fullPath: '/projects'
+      preLoaderRoute: typeof ProjectsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/projects/$slug': {
+      id: '/projects/$slug'
+      path: '/$slug'
+      fullPath: '/projects/$slug'
+      preLoaderRoute: typeof ProjectsSlugRouteImport
+      parentRoute: typeof ProjectsRoute
+    }
   }
 }
 
+interface ProjectsRouteChildren {
+  ProjectsSlugRoute: typeof ProjectsSlugRoute
+}
+
+const ProjectsRouteChildren: ProjectsRouteChildren = {
+  ProjectsSlugRoute: ProjectsSlugRoute,
+}
+
+const ProjectsRouteWithChildren = ProjectsRoute._addFileChildren(
+  ProjectsRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdminRoute: AdminRoute,
+  ContactRoute: ContactRoute,
+  CorporateRoute: CorporateRoute,
+  ManagementTeamRoute: ManagementTeamRoute,
+  ProjectsRoute: ProjectsRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
