@@ -11,3 +11,4 @@
 
 - Public marketing content is database-backed with seeded fallback content so first render remains complete; admin edits are protected by database role policies.
 - The admin area uses the managed authenticated route layout and keeps role authorization enforced by row-level database rules.
+- Website media uploads use the private site-media bucket and time-limited signed URLs so administration stays role-protected.
