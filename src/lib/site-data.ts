@@ -12,7 +12,7 @@ export type Project = {
   image_key: string;
   image_url: string | null;
   amenities: string[];
-  facts: Record<string, string>;
+  facts: Record<string, unknown> | null;
   is_featured: boolean;
   is_published: boolean;
   sort_order: number;
