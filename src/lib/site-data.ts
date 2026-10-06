@@ -1,5 +1,6 @@
 import auroraImage from "@/assets/project-aurora.jpg";
 import niloyImage from "@/assets/project-niloy.jpg";
+import type { Json } from "@/integrations/supabase/types";
 
 export type Project = {
   id: string;
@@ -12,7 +13,7 @@ export type Project = {
   image_key: string;
   image_url: string | null;
   amenities: string[];
-  facts: Record<string, unknown> | null;
+  facts: Json;
   is_featured: boolean;
   is_published: boolean;
   sort_order: number;

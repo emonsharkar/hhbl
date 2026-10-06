@@ -48,5 +48,5 @@ export function SiteShell({ children }: { children: ReactNode }) {
 }
 
 export function PageIntro({ eyebrow, title, copy }: { eyebrow: string; title: string; copy: string }) {
-  return <section className="bg-navy py-20 text-primary-foreground"><div className="mx-auto max-w-7xl px-5 lg:px-8"><p className="section-label text-sky">{eyebrow}</p><h1 className="mt-4 max-w-4xl text-4xl font-bold sm:text-6xl">{title}</h1><p className="mt-6 max-w-2xl text-base leading-8 text-primary-foreground/70">{copy}</p></div></section>;
+  return <section className="relative overflow-hidden bg-navy py-20 text-primary-foreground"><div className="absolute inset-y-0 right-0 w-1/3 border-l border-primary-foreground/10 opacity-40"/><div className="relative mx-auto max-w-7xl px-5 lg:px-8 reveal"><p className="section-label text-sky">{eyebrow}</p><h1 className="mt-4 max-w-4xl text-4xl font-bold sm:text-6xl">{title}</h1><p className="mt-6 max-w-2xl text-base leading-8 text-primary-foreground/70">{copy}</p></div></section>;
 }

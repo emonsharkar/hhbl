@@ -1,0 +1,7 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { ProjectCard } from "@/components/project-card";
+import { PageIntro } from "@/components/site-shell";
+import { demoProjects } from "@/lib/site-data";
+import { getPublicProjects } from "@/lib/site.functions";
+export const Route = createFileRoute("/projects/")({ loader: async () => { try { const projects = await getPublicProjects(); return projects.length ? projects : demoProjects; } catch { return demoProjects; } }, head: () => ({ meta: [{ title: "Projects | HBL" }, { name: "description", content: "Browse current, upcoming, and completed HBL residential projects in Dhaka." }, { property: "og:title", content: "HBL Residential Projects" }, { property: "og:description", content: "Discover HBL homes across Dhaka." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: Projects });
+function Projects() { const projects = Route.useLoaderData(); return <><PageIntro eyebrow="Portfolio" title="Homes with a lasting sense of place" copy="Explore a selection of current, upcoming, and completed residential developments across Dhaka."/><section className="py-20"><div className="mx-auto grid max-w-7xl gap-6 px-5 sm:grid-cols-2 lg:grid-cols-3 lg:px-8">{projects.map((project)=><ProjectCard key={project.id} project={project}/>)}</div></section></> }
