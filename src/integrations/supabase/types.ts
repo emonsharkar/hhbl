@@ -83,9 +83,87 @@ export type Database = {
         }
         Relationships: []
       }
+      faqs: {
+        Row: {
+          answer: string
+          category: string
+          created_at: string
+          id: string
+          is_published: boolean
+          question: string
+          sort_order: number
+          updated_at: string
+        }
+        Insert: {
+          answer: string
+          category?: string
+          created_at?: string
+          id?: string
+          is_published?: boolean
+          question: string
+          sort_order?: number
+          updated_at?: string
+        }
+        Update: {
+          answer?: string
+          category?: string
+          created_at?: string
+          id?: string
+          is_published?: boolean
+          question?: string
+          sort_order?: number
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      project_media: {
+        Row: {
+          caption: string
+          created_at: string
+          id: string
+          is_published: boolean
+          media_type: string
+          project_id: string
+          sort_order: number
+          updated_at: string
+          url: string
+        }
+        Insert: {
+          caption?: string
+          created_at?: string
+          id?: string
+          is_published?: boolean
+          media_type?: string
+          project_id: string
+          sort_order?: number
+          updated_at?: string
+          url: string
+        }
+        Update: {
+          caption?: string
+          created_at?: string
+          id?: string
+          is_published?: boolean
+          media_type?: string
+          project_id?: string
+          sort_order?: number
+          updated_at?: string
+          url?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "project_media_project_id_fkey"
+            columns: ["project_id"]
+            isOneToOne: false
+            referencedRelation: "projects"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       projects: {
         Row: {
           amenities: string[]
+          brochure_url: string | null
           created_at: string
           description: string
           facts: Json
@@ -95,6 +173,7 @@ export type Database = {
           is_featured: boolean
           is_published: boolean
           location: string
+          map_url: string | null
           slug: string
           sort_order: number
           status: string
@@ -104,6 +183,7 @@ export type Database = {
         }
         Insert: {
           amenities?: string[]
+          brochure_url?: string | null
           created_at?: string
           description?: string
           facts?: Json
@@ -113,6 +193,7 @@ export type Database = {
           is_featured?: boolean
           is_published?: boolean
           location: string
+          map_url?: string | null
           slug: string
           sort_order?: number
           status?: string
@@ -122,6 +203,7 @@ export type Database = {
         }
         Update: {
           amenities?: string[]
+          brochure_url?: string | null
           created_at?: string
           description?: string
           facts?: Json
@@ -131,6 +213,7 @@ export type Database = {
           is_featured?: boolean
           is_published?: boolean
           location?: string
+          map_url?: string | null
           slug?: string
           sort_order?: number
           status?: string
@@ -207,6 +290,39 @@ export type Database = {
           name?: string
           phone?: string | null
           role?: string
+          sort_order?: number
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      testimonials: {
+        Row: {
+          created_at: string
+          id: string
+          is_published: boolean
+          name: string
+          quote: string
+          relationship: string
+          sort_order: number
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          is_published?: boolean
+          name: string
+          quote: string
+          relationship?: string
+          sort_order?: number
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          is_published?: boolean
+          name?: string
+          quote?: string
+          relationship?: string
           sort_order?: number
           updated_at?: string
         }

@@ -19,8 +19,8 @@
  */
 
 @theme inline {
-  --font-sans: "Manrope", sans-serif;
-  --font-display: "Manrope", sans-serif;
+  --font-sans: "Work Sans", sans-serif;
+  --font-display: "Instrument Serif", serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -75,13 +75,13 @@
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.31 0.16 263);
+  --primary: oklch(0.31 0.14 255);
   --primary-foreground: oklch(0.984 0.003 247.858);
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
   --muted: oklch(0.968 0.007 247.896);
   --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.93 0.025 250);
+  --accent: oklch(0.975 0.012 240);
   --accent-foreground: oklch(0.208 0.042 265.755);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
@@ -101,8 +101,8 @@
   --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
-  --navy: oklch(0.18 0.09 264);
-  --sky: oklch(0.71 0.14 243);
+  --navy: oklch(0.19 0.09 258);
+  --sky: oklch(0.67 0.15 236);
   --success: oklch(0.72 0.19 145);
   --success-foreground: oklch(1 0 0);
 }
@@ -154,7 +154,7 @@
     letter-spacing: 0;
   }
 
-  h1, h2, h3 { letter-spacing: 0; }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing: 0; }
 }
 
 @utility section-label {
@@ -163,6 +163,26 @@
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
+
+@utility editorial-rule {
+  width: 4rem;
+  height: 1px;
+  background: var(--color-sky);
+}
+
+@utility image-veil {
+  background: linear-gradient(90deg, color-mix(in oklab, var(--navy) 94%, transparent), color-mix(in oklab, var(--navy) 30%, transparent), transparent);
+}
+
+@utility section-shell {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  @media (min-width: 64rem) { padding-inline: 2rem; }
+}
+
+html { scroll-behavior: smooth; }
 
 @media (prefers-reduced-motion: no-preference) {
   .reveal { animation: reveal 700ms ease-out both; }
