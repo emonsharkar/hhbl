@@ -13,7 +13,7 @@ function Projects() {
   const [status, setStatus] = useState("All");
   const [location, setLocation] = useState("All");
   const statuses = ["All", ...new Set(projects.map(project => project.status))];
-  const locations = ["All", ...new Set(projects.map(project => project.location.split(",")[0]))];
+  const locations = ["All", ...new Set(projects.map(project => project.location.split(",")[0] ?? project.location))];
   const visible = useMemo(() => projects.filter(project => (status === "All" || project.status === status) && (location === "All" || project.location.startsWith(location))), [projects, status, location]);
   return <><PageIntro eyebrow="Portfolio" title="Homes with a lasting sense of place" copy="Explore a selection of current, upcoming, and completed residential developments across Dhaka."/><section className="py-20 sm:py-28"><div className="section-shell"><div className="flex flex-wrap items-center gap-3 border-b pb-8"><span className="mr-2 text-xs font-semibold uppercase text-muted-foreground">Status</span>{statuses.map(item=><Button key={item} size="sm" variant={status === item ? "default" : "outline"} onClick={()=>setStatus(item)}>{item}</Button>)}<span className="ml-0 mr-2 text-xs font-semibold uppercase text-muted-foreground md:ml-5">Location</span>{locations.map(item=><Button key={item} size="sm" variant={location === item ? "default" : "outline"} onClick={()=>setLocation(item)}>{item}</Button>)}</div><div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{visible.map(project=><ProjectCard key={project.id} project={project}/>)}</div>{visible.length === 0 && <p className="py-20 text-center text-muted-foreground">No projects match these filters.</p>}</div></section></>;
 }
