@@ -12,7 +12,7 @@ function publicClient() {
 }
 
 export const getPublicProjects = createServerFn({ method: "GET" }).handler(async () => {
-  const { data, error } = await publicClient().from("projects").select("id,title,slug,location,status,summary,description,image_key,image_url,amenities,facts,is_featured,is_published,sort_order").eq("is_published", true).order("sort_order");
+  const { data, error } = await publicClient().from("projects").select("id,title,slug,location,status,summary,description,image_key,image_url,amenities,facts,is_featured,is_published,sort_order,map_url,brochure_url").eq("is_published", true).order("sort_order");
   if (error) throw new Error("Unable to load projects");
   return data;
 });
@@ -26,7 +26,7 @@ export const getPublicTeam = createServerFn({ method: "GET" }).handler(async () 
 export const getPublicProject = createServerFn({ method: "GET" })
   .inputValidator((input) => z.object({ slug: z.string().min(1).max(120) }).parse(input))
   .handler(async ({ data }) => {
-    const result = await publicClient().from("projects").select("id,title,slug,location,status,summary,description,image_key,image_url,amenities,facts,is_featured,is_published,sort_order").eq("slug", data.slug).eq("is_published", true).maybeSingle();
+    const result = await publicClient().from("projects").select("id,title,slug,location,status,summary,description,image_key,image_url,amenities,facts,is_featured,is_published,sort_order,map_url,brochure_url").eq("slug", data.slug).eq("is_published", true).maybeSingle();
     if (result.error) throw new Error("Unable to load project");
     return result.data;
   });
@@ -36,6 +36,32 @@ export const getPublicContent = createServerFn({ method: "GET" }).handler(async 
   if (error) throw new Error("Unable to load website content");
   return data;
 });
+
+export const getPublicAffiliations = createServerFn({ method: "GET" }).handler(async () => {
+  const { data, error } = await publicClient().from("affiliations").select("*").eq("is_published", true).order("sort_order");
+  if (error) throw new Error("Unable to load affiliations");
+  return data;
+});
+
+export const getPublicTestimonials = createServerFn({ method: "GET" }).handler(async () => {
+  const { data, error } = await publicClient().from("testimonials").select("*").eq("is_published", true).order("sort_order");
+  if (error) throw new Error("Unable to load testimonials");
+  return data;
+});
+
+export const getPublicFaqs = createServerFn({ method: "GET" }).handler(async () => {
+  const { data, error } = await publicClient().from("faqs").select("*").eq("is_published", true).order("sort_order");
+  if (error) throw new Error("Unable to load questions");
+  return data;
+});
+
+export const getPublicProjectMedia = createServerFn({ method: "GET" })
+  .inputValidator((input) => z.object({ projectId: z.string().uuid() }).parse(input))
+  .handler(async ({ data }) => {
+    const result = await publicClient().from("project_media").select("*").eq("project_id", data.projectId).eq("is_published", true).order("sort_order");
+    if (result.error) throw new Error("Unable to load project gallery");
+    return result.data;
+  });
 
 const messageSchema = z.object({ name: z.string().trim().min(2).max(100), email: z.string().email().max(200), phone: z.string().trim().max(30).optional(), subject: z.string().trim().min(2).max(160), message: z.string().trim().min(10).max(3000), website: z.string().max(0).optional() });
 export const submitContactMessage = createServerFn({ method: "POST" }).inputValidator((input) => messageSchema.parse(input)).handler(async ({ data }) => {

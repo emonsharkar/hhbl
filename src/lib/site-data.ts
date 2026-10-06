@@ -17,6 +17,8 @@ export type Project = {
   is_featured: boolean;
   is_published: boolean;
   sort_order: number;
+  map_url?: string | null;
+  brochure_url?: string | null;
 };
 
 export type TeamMember = {
