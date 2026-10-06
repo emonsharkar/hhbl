@@ -18,10 +18,18 @@ export const getPublicProjects = createServerFn({ method: "GET" }).handler(async
 });
 
 export const getPublicTeam = createServerFn({ method: "GET" }).handler(async () => {
-  const { data, error } = await publicClient().from("team_members").select("id,name,role,biography,image_url,is_published,sort_order").eq("is_published", true).order("sort_order");
+  const { data, error } = await publicClient().from("team_members").select("id,name,role,phone,biography,image_url,is_published,sort_order").eq("is_published", true).order("sort_order");
   if (error) throw new Error("Unable to load team");
   return data;
 });
+
+export const getPublicProject = createServerFn({ method: "GET" })
+  .inputValidator((input) => z.object({ slug: z.string().min(1).max(120) }).parse(input))
+  .handler(async ({ data }) => {
+    const result = await publicClient().from("projects").select("id,title,slug,location,status,summary,description,image_key,image_url,amenities,facts,is_featured,is_published,sort_order").eq("slug", data.slug).eq("is_published", true).maybeSingle();
+    if (result.error) throw new Error("Unable to load project");
+    return result.data;
+  });
 
 export const getPublicContent = createServerFn({ method: "GET" }).handler(async () => {
   const { data, error } = await publicClient().from("site_content").select("section_key,heading,body,extra").eq("is_published", true);

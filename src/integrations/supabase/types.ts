@@ -181,6 +181,7 @@ export type Database = {
           image_url: string | null
           is_published: boolean
           name: string
+          phone: string | null
           role: string
           sort_order: number
           updated_at: string
@@ -192,6 +193,7 @@ export type Database = {
           image_url?: string | null
           is_published?: boolean
           name: string
+          phone?: string | null
           role: string
           sort_order?: number
           updated_at?: string
@@ -203,6 +205,7 @@ export type Database = {
           image_url?: string | null
           is_published?: boolean
           name?: string
+          phone?: string | null
           role?: string
           sort_order?: number
           updated_at?: string

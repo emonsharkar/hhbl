@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ProjectCard } from "@/components/project-card";
 import { demoProjects } from "@/lib/site-data";
 import heroImage from "@/assets/hbl-hero.jpg";
+import { ParallaxImage } from "@/components/parallax-image";
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
@@ -21,9 +22,9 @@ function Index() {
   return (
     <>
       <section className="relative flex min-h-[calc(100vh-5rem)] items-center overflow-hidden">
-        <img src={heroImage} alt="Contemporary residential towers in Dhaka" width={1920} height={1088} className="absolute inset-0 h-full w-full object-cover" />
+        <ParallaxImage src={heroImage} alt="Contemporary residential towers in Dhaka" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-navy/65" />
-        <div className="relative mx-auto w-full max-w-7xl px-5 py-24 text-center text-primary-foreground lg:px-8">
+        <div className="relative mx-auto w-full max-w-7xl px-5 py-24 text-center text-primary-foreground lg:px-8 reveal">
           <p className="section-label text-sky">We are</p>
           <h1 className="mx-auto mt-5 max-w-5xl text-4xl font-extrabold leading-tight sm:text-6xl lg:text-7xl">Haque Home &amp; Builders Limited</h1>
           <p className="mx-auto mt-7 max-w-2xl text-base leading-8 text-primary-foreground/80 sm:text-lg">Your trusted partner for thoughtful homes and enduring value in Bangladesh.</p>
