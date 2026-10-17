@@ -1,5 +1,9 @@
 # HBL website roadmap
 
+- [ ] Add the supplied organization logo section to the homepage
+- [ ] Add a homepage showcase with verified HBL video footage
+- [ ] Verify the new homepage sections and playback
+
 - [x] Refresh the home banner and apply Montserrat/Poppins typography
 - [x] Add primary call and floating WhatsApp links
 - [x] Polish and verify public layouts on phones and larger screens
