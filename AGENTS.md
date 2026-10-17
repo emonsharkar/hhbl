@@ -15,3 +15,4 @@
 
 - Public sections and shared contact details resolve published site_content records with official source fallbacks; empty collections stay empty so unpublished samples do not reappear.
 - Primary call and WhatsApp destinations are shared through one browser-safe contact module so all contact controls stay consistent.
+- Homepage logo strip uses the explicitly supplied brand assets independently from the published affiliation collection; video presentation only enables playback for a supplied HTTPS source so missing footage is never represented as playable.
