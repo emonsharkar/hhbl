@@ -1,5 +1,10 @@
 # HBL website roadmap
 
+- [ ] Import supplied gallery photos and add Gallery page/menu
+- [ ] Simplify all website content controls and gallery selection/uploads
+- [ ] Set up secure initial super-admin access for admin@haque.com
+- [ ] Verify gallery and content administration
+
 - [x] Add the supplied organization logo section to the homepage
 - [x] Add and verify the homepage showcase cover and phone layouts
 - [x] Import the supplied Google Drive folder video and verify showcase player controls
