@@ -4,6 +4,7 @@ import { Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import posterAsset from "@/assets/videos/hbl-showcase-poster.jpg.asset.json";
 import showcaseAsset from "@/assets/videos/hbl-showcase.mp4.asset.json";
+import showcaseWebm from "@/assets/videos/hbl-showcase.webm.asset.json";
 
 export function HomeVideoShowcase({ videoUrl = "" }: { videoUrl?: string }) {
   const [playing, setPlaying] = useState(false);
@@ -29,7 +30,7 @@ export function HomeVideoShowcase({ videoUrl = "" }: { videoUrl?: string }) {
       </div>
       <div className="relative aspect-video w-full overflow-hidden bg-navy">
         {playing && embed ? <iframe src={embed} title="Haque Home & Builders showcase film" allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen className="absolute inset-0 h-full w-full border-0" />
-          : source ? <><video src={source} poster={poster} controls playsInline preload="metadata" aria-label="Haque Home & Builders showcase video" className="absolute inset-0 h-full w-full object-contain" onError={() => setFailed(true)} onLoadedData={() => setFailed(false)} />{failed && <p role="alert" className="absolute left-4 right-4 top-4 bg-navy/90 px-4 py-3 text-sm text-primary-foreground">The video could not load. Please refresh and try again.</p>}</>
+          : source ? <><video poster={poster} controls playsInline preload="metadata" aria-label="Haque Home & Builders showcase video" className="absolute inset-0 h-full w-full object-contain" onError={() => setFailed(true)} onLoadedData={() => setFailed(false)}>{videoUrl ? <source src={source} /> : <><source src={showcaseAsset.url} type="video/mp4" /><source src={showcaseWebm.url} type="video/webm" /></>}</video>{failed && <p role="alert" className="absolute left-4 right-4 top-4 bg-navy/90 px-4 py-3 text-sm text-primary-foreground">The video could not load. Please refresh and try again.</p>}</>
           : <><img src={poster} alt="Contemporary residential architecture and landscaped gardens" loading="lazy" className="absolute inset-0 h-full w-full object-cover" /><div className="absolute inset-0 bg-navy/25" />
             {available ? <Button size="icon" onClick={() => setPlaying(true)} aria-label="Play HBL showcase film" className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 rounded-full bg-background text-navy hover:bg-background/90 sm:h-24 sm:w-24"><Play className="size-7 fill-current sm:size-9" /></Button>
               : <div className="absolute bottom-4 left-4 flex items-center gap-3 bg-navy/80 px-4 py-3 text-xs text-primary-foreground sm:bottom-6 sm:left-6 sm:text-sm"><Film className="size-4 shrink-0" />Showcase film coming soon</div>}
