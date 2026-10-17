@@ -9,7 +9,7 @@ import official from "@/lib/official-content.json";
 const supplied = [rajuk, ceramic, electronics, agro, readymix, rehab];
 const names = ["RAJUK", "Haque Ceramic Industries Limited", "S.P. Electronics Limited", "Haque JSP Agro", "Haque Ready Mix", "REHAB"];
 
-export function HomePartners({ affiliations }: { affiliations: { id: string; name: string; logo_url: string | null }[] }) {
+export function HomePartners({ affiliations }: { affiliations: readonly { id: string; name: string; logo_url: string | null }[] }) {
   if (!affiliations.length) return null;
   const ordered = [...affiliations].sort((a, b) => {
     const rank = (name: string) => { const index = names.indexOf(name); return index < 0 ? names.length : index; };
