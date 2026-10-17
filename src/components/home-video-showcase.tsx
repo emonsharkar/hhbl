@@ -6,7 +6,7 @@ import posterAsset from "@/assets/videos/hbl-showcase-poster.jpg.asset.json";
 import showcaseAsset from "@/assets/videos/hbl-showcase.mp4.asset.json";
 import showcaseWebm from "@/assets/videos/hbl-showcase.webm.asset.json";
 
-export function HomeVideoShowcase({ videoUrl = "" }: { videoUrl?: string }) {
+export function HomeVideoShowcase({ videoUrl = "", heading = "" }: { videoUrl?: string; heading?: string }) {
   const [playing, setPlaying] = useState(false);
   const [failed, setFailed] = useState(false);
   const poster = posterAsset.url;
@@ -25,7 +25,7 @@ export function HomeVideoShowcase({ videoUrl = "" }: { videoUrl?: string }) {
   return <section aria-labelledby="showcase-title" className="bg-navy py-20 text-primary-foreground sm:py-28">
     <div className="section-shell">
       <div className="mb-10 flex flex-wrap items-end justify-between gap-6">
-        <div><p className="section-label text-sky">The HBL showcase</p><h2 id="showcase-title" className="mt-4 max-w-3xl">A closer look at Haque Home &amp; Builders.</h2></div>
+        <div><p className="section-label text-sky">The HBL showcase</p><h2 id="showcase-title" className="mt-4 max-w-3xl">{heading || "A closer look at Haque Home & Builders."}</h2></div>
         <Button asChild variant="outline" className="border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-navy"><Link to="/projects">Our residences <ArrowUpRight /></Link></Button>
       </div>
       <div className="relative aspect-video w-full overflow-hidden bg-navy">

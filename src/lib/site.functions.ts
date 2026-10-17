@@ -17,6 +17,12 @@ export const getPublicProjects = createServerFn({ method: "GET" }).handler(async
   return data;
 });
 
+export const getPublicGallery = createServerFn({ method: "GET" }).handler(async () => {
+  const { data, error } = await publicClient().from("gallery_images").select("id,url,caption,category,sort_order").eq("is_published", true).order("sort_order");
+  if (error) throw new Error("Unable to load gallery");
+  return data;
+});
+
 export const getPublicTeam = createServerFn({ method: "GET" }).handler(async () => {
   const { data, error } = await publicClient().from("team_members").select("id,name,role,phone,biography,image_url,is_published,sort_order").eq("is_published", true).order("sort_order");
   if (error) throw new Error("Unable to load team");

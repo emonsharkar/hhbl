@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CorporateRouteImport } from './routes/corporate'
+import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as ManagementTeamRouteImport } from './routes/management-team'
 import { Route as ProjectsRouteImport } from './routes/projects'
 import { Route as ProjectsIndexRouteImport } from './routes/projects.index'
@@ -36,6 +37,11 @@ const ContactRoute = ContactRouteImport.update({
 const CorporateRoute = CorporateRouteImport.update({
   id: '/corporate',
   path: '/corporate',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ManagementTeamRoute = ManagementTeamRouteImport.update({
@@ -64,6 +70,7 @@ export interface FileRoutesByFullPath {
   '/admin': typeof AdminRoute
   '/contact': typeof ContactRoute
   '/corporate': typeof CorporateRoute
+  '/gallery': typeof GalleryRoute
   '/management-team': typeof ManagementTeamRoute
   '/projects': typeof ProjectsRouteWithChildren
   '/projects/$slug': typeof ProjectsSlugRoute
@@ -74,6 +81,7 @@ export interface FileRoutesByTo {
   '/admin': typeof AdminRoute
   '/contact': typeof ContactRoute
   '/corporate': typeof CorporateRoute
+  '/gallery': typeof GalleryRoute
   '/management-team': typeof ManagementTeamRoute
   '/projects/$slug': typeof ProjectsSlugRoute
   '/projects': typeof ProjectsIndexRoute
@@ -84,6 +92,7 @@ export interface FileRoutesById {
   '/admin': typeof AdminRoute
   '/contact': typeof ContactRoute
   '/corporate': typeof CorporateRoute
+  '/gallery': typeof GalleryRoute
   '/management-team': typeof ManagementTeamRoute
   '/projects': typeof ProjectsRouteWithChildren
   '/projects/$slug': typeof ProjectsSlugRoute
@@ -96,6 +105,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/contact'
     | '/corporate'
+    | '/gallery'
     | '/management-team'
     | '/projects'
     | '/projects/$slug'
@@ -106,6 +116,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/contact'
     | '/corporate'
+    | '/gallery'
     | '/management-team'
     | '/projects/$slug'
     | '/projects'
@@ -115,6 +126,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/contact'
     | '/corporate'
+    | '/gallery'
     | '/management-team'
     | '/projects'
     | '/projects/$slug'
@@ -126,6 +138,7 @@ export interface RootRouteChildren {
   AdminRoute: typeof AdminRoute
   ContactRoute: typeof ContactRoute
   CorporateRoute: typeof CorporateRoute
+  GalleryRoute: typeof GalleryRoute
   ManagementTeamRoute: typeof ManagementTeamRoute
   ProjectsRoute: typeof ProjectsRouteWithChildren
 }
@@ -158,6 +171,13 @@ declare module '@tanstack/react-router' {
       path: '/corporate'
       fullPath: '/corporate'
       preLoaderRoute: typeof CorporateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/management-team': {
@@ -210,6 +230,7 @@ const rootRouteChildren: RootRouteChildren = {
   AdminRoute: AdminRoute,
   ContactRoute: ContactRoute,
   CorporateRoute: CorporateRoute,
+  GalleryRoute: GalleryRoute,
   ManagementTeamRoute: ManagementTeamRoute,
   ProjectsRoute: ProjectsRouteWithChildren,
 }

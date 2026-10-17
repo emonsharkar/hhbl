@@ -15,4 +15,8 @@
 
 - Public sections and shared contact details resolve published site_content records with official source fallbacks; empty collections stay empty so unpublished samples do not reappear.
 - Primary call and WhatsApp destinations are shared through one browser-safe contact module so all contact controls stay consistent.
-- Homepage logo strip uses explicitly supplied brand assets independently from the published affiliation collection; the showcase defaults to imported user footage served through an asset pointer, with native player controls and optional published HTTPS video overrides, avoiding runtime dependence on Drive access.
+- Homepage logo strip resolves published affiliations with supplied logo fallbacks; the showcase defaults to imported user footage served through an asset pointer, with native player controls and optional published HTTPS video overrides, avoiding runtime dependence on Drive access.
+
+- Gallery photos live in gallery_images with admin-only writes and published-only public reads; imported media uses asset pointers and new uploads use managed storage.
+- Editorial settings use labeled recursive fields over site_content extras, keeping non-technical administrators out of JSON.
+- Initial administration is granted by a database trigger only after the designated account email is confirmed; the browser never inserts privileged roles.
