@@ -55,7 +55,7 @@ function Index() {
 
     <HomeVideoShowcase videoUrl={textExtra(showcase, "video_url")} />
 
-    <HomePartners affiliations={affiliations} />
+    <HomePartners />
 
     {questions.length > 0 && <section className="py-24 sm:py-32"><div className="section-shell grid gap-12 lg:grid-cols-[.8fr_1.2fr]"><div><p className="section-label">Common questions</p><h2 className="mt-5 text-5xl leading-tight sm:text-6xl">Before you choose your home.</h2></div><Accordion type="single" collapsible className="border-t">{questions.slice(0,6).map(item=><AccordionItem key={item.id} value={item.id}><AccordionTrigger className="py-6 text-left text-lg">{item.question}</AccordionTrigger><AccordionContent className="max-w-2xl text-base leading-8 text-muted-foreground">{item.answer}</AccordionContent></AccordionItem>)}</Accordion></div></section>}
 
