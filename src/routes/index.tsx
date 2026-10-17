@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ProjectCard } from "@/components/project-card";
 import { ParallaxImage } from "@/components/parallax-image";
+import { HomePartners } from "@/components/home-partners";
+import { HomeVideoShowcase } from "@/components/home-video-showcase";
 import { contentSection, listExtra, textExtra } from "@/lib/content";
 import { demoProjects, officialContent } from "@/lib/site-data";
 import { getPublicContent, getPublicAffiliations, getPublicFaqs, getPublicProjects, getPublicTestimonials } from "@/lib/site.functions";
@@ -31,6 +33,7 @@ function Index() {
   const intro = contentSection(content, "introduction", officialContent[2]);
   const mission = contentSection(content, "mission", officialContent[4]);
   const services = contentSection(content, "services", officialContent[5]);
+  const showcase = contentSection(content, "video_showcase", undefined);
   return <>
     <section className="home-hero relative overflow-hidden bg-navy text-primary-foreground">
       <ParallaxImage src={heroImage} alt="Architectural illustration of contemporary residences with landscaped gardens" className="absolute inset-0 h-full w-full object-cover" />
@@ -50,7 +53,9 @@ function Index() {
 
     {stories.length > 0 && <section className="py-24 sm:py-32"><div className="section-shell"><div className="grid gap-12 lg:grid-cols-[.75fr_1.25fr]"><div><p className="section-label">Client stories</p><h2 className="mt-5 text-5xl leading-tight sm:text-6xl">Confidence, reflected.</h2></div><div className="grid gap-8 md:grid-cols-2">{stories.slice(0,4).map(item=><blockquote key={item.id} className="border-t border-primary pt-7"><p className="font-display text-3xl leading-snug">“{item.quote}”</p><footer className="mt-7 text-xs font-semibold uppercase text-muted-foreground">{item.name} · {item.relationship}</footer></blockquote>)}</div></div></div></section>}
 
-    {affiliations.length > 0 && <section className="border-y bg-accent py-12"><div className="section-shell"><p className="text-center text-xs font-semibold uppercase text-muted-foreground">Group companies & organizations</p><div className="mt-8 grid grid-cols-2 gap-5 text-center md:grid-cols-3 lg:grid-cols-6">{affiliations.map(item=><span key={item.id} className="text-sm font-semibold text-foreground/70">{item.logo_url && <img src={item.logo_url} alt={item.name} loading="lazy" className="mx-auto mb-3 h-20 w-20 object-contain"/>}{item.name}</span>)}</div></div></section>}
+    <HomeVideoShowcase videoUrl={textExtra(showcase, "video_url")} />
+
+    <HomePartners affiliations={affiliations} />
 
     {questions.length > 0 && <section className="py-24 sm:py-32"><div className="section-shell grid gap-12 lg:grid-cols-[.8fr_1.2fr]"><div><p className="section-label">Common questions</p><h2 className="mt-5 text-5xl leading-tight sm:text-6xl">Before you choose your home.</h2></div><Accordion type="single" collapsible className="border-t">{questions.slice(0,6).map(item=><AccordionItem key={item.id} value={item.id}><AccordionTrigger className="py-6 text-left text-lg">{item.question}</AccordionTrigger><AccordionContent className="max-w-2xl text-base leading-8 text-muted-foreground">{item.answer}</AccordionContent></AccordionItem>)}</Accordion></div></section>}
 
