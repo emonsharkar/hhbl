@@ -12,6 +12,7 @@ const navigation = [
   { label: "Home", to: "/" as const },
   { label: "Corporate", to: "/corporate" as const },
   { label: "Projects", to: "/projects" as const },
+  { label: "Gallery", to: "/gallery" as const },
   { label: "Management Team", to: "/management-team" as const },
   { label: "Contact", to: "/contact" as const },
 ];
