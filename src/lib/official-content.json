@@ -1,0 +1,678 @@
+{
+  "projects": [
+    {
+      "id": "2bbade3f-bd7a-5042-a516-6692dc28316e",
+      "title": "Haque Peace Villa",
+      "slug": "haque-peace-villa",
+      "location": "Plot # 01, Block # 18, Savar Bank Town, Savar Pourashova, Dhaka",
+      "status": "Upcoming",
+      "summary": "Haque Peace Villa is a complete residential project located at Plot # 01, Block # 18, Savar Bank Town, Savar Pourashova, Dhaka.",
+      "description": "Haque Peace Villa is a complete residential project located at Plot # 01, Block # 18, Savar Bank Town, Savar Pourashova, Dhaka. Developed on 8.25 decimal of south-facing land, the project consists of a single Ground + 9 storied (10-storied) building designed for modern urban living.\nProject at a Glance\nProject Name : Haque Town\nProject Address : Plot # 01, Block # 18, Savar Bank Town, Savar Pourashova, Dhaka\nLand Area : 8.25 Decimal\nFacing : South\nNumber of Building : 01 Nos\nTotal Height : Ground Floor + 9 Storied (G+9 = 10 Storied)\nBuilding Type : Complete Residential\nTotal Apartments : 27 Nos\nUnits Per Floor : 03 Nos\nCar Parking : 10 Nos\nElevator : 02 Nos\nWork Start : March 2026\nExpected Hand Over : September 2029\nUnit Size\nType A : 1180 SFT (Approx.)\nType B : 1120 SFT (Approx.)\nType C : 1080 SFT (Approx.)\nEach Unit Consists Of\nBedroom : 03 Nos\nVarandah : 03 Nos\nDrawing : 01 No\nDining : 01 No\nKitchen : 01 No\nToilet : 03 Nos\nUnit Wise Details\nUnit A – 1130 SFT (Approx.)\nBedroom : 03 Nos\nVarandah : 03 Nos\nDrawing : 01 No\nDining : 01 No\nKitchen : 01 No\nAttached Toilet : 02 Nos\nCommon Toilet : 01 No\nUnit B – 1100 SFT (Approx.)\nBedroom : 03 Nos\nVarandah : 03 Nos\nDrawing : 01 No\nDining : 01 No\nKitchen : 01 No\nAttached Toilet : 02 Nos\nCommon Toilet : 01 No\nUnit C – 1060 SFT (Approx.)\nBedroom : 03 Nos\nVarandah : 04 Nos\nDrawing : 01 No\nDining : 01 No\nKitchen : 01 No\nAttached Toilet : 02 Nos\nCommon Toilet : 01 No\nConveniences Nearby\nEducational Institutions\nJahangirnagar University\nDaffodil University\nCity University\nSavar Govt. College\nSavar Cantonment Public School & College\nArmy Institute of Business Administration\nHospitals\nEnam Medical College & Hospital\nGonoshasthaya Medical College\nCRP\nPopular Diagnostic Center Ltd.\nIBN SINA Diagnostic & Consultation Center\nSavar Specialized Hospital Ltd.\nShopping & Recreation\nSavar New Market\nSavar City Center\nRazzak Plaza\nSena Shopping Complex\nNational Martyrs’ Memorial\nFantasy Kingdom\nNandon Park\nCommunication Facilities\nVery close to Dhaka–Aricha Highway\nBus, Taxi, CNG & Auto available\nCNG Filling Station nearby\nOnly 20 km from Dhaka City",
+      "image_key": "",
+      "image_url": "/__l5e/assets-v1/3c4e0e81-c42b-4eaa-8511-a522b7b5e6a1/official-1.jpeg",
+      "amenities": [],
+      "facts": {
+        "land": "8.25 Decimal",
+        "floors": "G + 9",
+        "apartments": "27",
+        "parking": "10",
+        "elevators": "2",
+        "work starts": "March 2026",
+        "expected handover": "September 2029"
+      },
+      "is_featured": false,
+      "is_published": true,
+      "sort_order": 1,
+      "map_url": null,
+      "brochure_url": null
+    },
+    {
+      "id": "bea72887-fa24-5f1f-ab63-50c16795cd00",
+      "title": "Haque Rayan’s Dream",
+      "slug": "haque-rayans-dream",
+      "location": "Holding # 780, Road # 24, Block # F, Bashundhara R/A, Dhaka",
+      "status": "Completed",
+      "summary": "Haque Rayan’s Dream, built in the prime location of the Bashundhara Residential Area, this project is an attractive option for peaceful and comfortable living.",
+      "description": "Haque Rayan’s Dream, built in the prime location of the Bashundhara Residential Area, this project is\nan attractive option for peaceful and comfortable living. Architecturally\nbeautiful in design, the project was completed and handed over in 2022.\nDescription of the Project\nName of the Project : Haque Rayan’s Dream\nAddress of the Project : Holding # 780, Road # 24, Block # F, Bashundhara R/A, Dhaka\nPresent Status : Complete & handed over project (2022)\nLand of the Project : 3.0 Katha\nHeight of the Building : (G+6) 07 storied building\nType of the Building : Complete residential\nNumber of Flats : 06 Nos\nNumber of Car Parking : 06 Nos\nUnits per Floor : 01 No\nArea of the Flat\nType A : 1610 Sft.\nFeatures of the Flat\nBedroom : 03 Nos\nKitchen : 01 No\nDining Room : 01 No\nToilet : 04 Nos\nBalcony : 04 Nos\nLiving Room : 01 No\nFormal Living : 01 No",
+      "image_key": "",
+      "image_url": "/__l5e/assets-v1/5d193fe4-680a-4f58-84ba-85fcc49a8f74/official-3.png",
+      "amenities": [],
+      "facts": {
+        "land": "3.0 Katha",
+        "floors": "G + 6",
+        "apartments": "6",
+        "parking": "6",
+        "size": "1,610 sft",
+        "handover": "2022"
+      },
+      "is_featured": false,
+      "is_published": true,
+      "sort_order": 2,
+      "map_url": null,
+      "brochure_url": null
+    },
+    {
+      "id": "0e3540cb-a4f8-5593-b20a-b2e9736a1113",
+      "title": "Haque Palace",
+      "slug": "haque-palace",
+      "location": "House # 23, Road # 10, Block # A, East Vatara, Gulshan, Dhaka",
+      "status": "Completed",
+      "summary": "Haque Palace is located very close to Gulshan at East Vatara, which is a perfect living solution for modern urban life.",
+      "description": "Haque Palace is located very close to Gulshan at East Vatara, which is a perfect\nliving solution for modern urban life. It is a complete project and was handed\nover in 2018.\nFacilities That Are Available\nDescription of the Project\nName of the Project : Haque Palace\nAddress of the Project : House # 23, Road # 10, Block # A, East Vatara, Gulshan, Dhaka\nPresent Status : Complete & handed over project (2018)\nLand of the Project : 4 Katha\nHeight of the Building : (G+6) 07 storied building\nType of the Building : Complete residential\nNumber of Flats : 14 Nos\nNumber of Car Parking : 07 Nos\nUnits & Area Details\nFrom 1st to 4th Floor (02 Units per Floor)\nType A : 970 Sft.\nType B : 970 Sft.\nFrom 5th to 6th Floor (03 Units per Floor)\nType A : 700 Sft.\nType B : 700 Sft.\nType C : 650 Sft.\nFeatures of the Flat\nBedroom : 03 / 02 Nos\nKitchen : 01 No\nDining Room : 01 No\nToilet : 02 Nos\nBalcony : 03 Nos\nLiving Room : 01 No",
+      "image_key": "",
+      "image_url": "/__l5e/assets-v1/4b52c288-ae9a-4791-9de0-b11919d687b9/official-9.png",
+      "amenities": [],
+      "facts": {
+        "land": "4 Katha",
+        "floors": "G + 6",
+        "apartments": "14",
+        "parking": "7",
+        "size": "650–970 sft",
+        "handover": "2018"
+      },
+      "is_featured": false,
+      "is_published": true,
+      "sort_order": 3,
+      "map_url": null,
+      "brochure_url": null
+    },
+    {
+      "id": "e06ea0aa-92e9-511f-a2f4-b22285000072",
+      "title": "Haque Mirava",
+      "slug": "haque-mirava",
+      "location": "Holding # 97/4/A, Chairman Goli, West Dhanmondi, Dhaka",
+      "status": "Completed",
+      "summary": "Haque Mirava, very close to the Dhanmondi residential area at Shankar, Chairman Goli, this project is the perfect solution for aesthetic and comfortable housing for modern urban life.",
+      "description": "Haque Mirava, very close to the Dhanmondi residential area at Shankar, Chairman Goli, this project\nis the perfect solution for aesthetic and comfortable housing for modern urban life.\nBuilt in one of the premium locations of West Dhanmondi, this project is a wonderful\ncombination of peaceful environment and modern civic amenities.\nSuper shops, schools, mosques, and restaurants are located within a short distance.\nRound-the-clock security system. Completely ready flat.\nFacilities That Are Available\nDescription of the Project\nName of the Project : Haque Mirava\nAddress of the Project : Holding # 97/4/A, Chairman Goli, West Dhanmondi, Dhaka\nPresent Status : Complete & handed over project\nLand of the Project : 3.49 Katha\nHeight of the Building : (G+7) 08 storied building\nType of the Building : Complete residential\nNumber of Flats : 14 Nos\nNumber of Car Parking : 06 Nos\nUnits in Each Floor : 02 Nos\nArea of Each Flat\nType A : 1050 Sft.\nType B : 1050 Sft.\nFeatures of the Flat\nBedroom : 03 Nos\nKitchen : 01 No\nDining Room : 01 No\nToilet : 03 Nos\nBalcony : 03 Nos\nLiving Room : 01 No",
+      "image_key": "",
+      "image_url": "/__l5e/assets-v1/cfa2892d-22c9-45e6-8f91-6853d82914fa/official-18.png",
+      "amenities": [],
+      "facts": {
+        "land": "3.49 Katha",
+        "floors": "G + 7",
+        "apartments": "14",
+        "parking": "6",
+        "size": "1,050 sft"
+      },
+      "is_featured": false,
+      "is_published": true,
+      "sort_order": 4,
+      "map_url": null,
+      "brochure_url": null
+    },
+    {
+      "id": "aa0b3ace-6624-51a0-9956-30c918526249",
+      "title": "Haque Jahanara Castle",
+      "slug": "haque-jahanara-castle",
+      "location": "House # 5, Road # 1, Block-A, Madani Avenue, East Vatara, Sayeed Nagar, Gulshan, Dhaka-1212",
+      "status": "Completed",
+      "summary": "Haque Jahanara Castle is a modern residential development located at House # 5, Road # 1, Block-A, Madani Avenue, East Vatara, Sayeed Nagar, Gulshan, Dhaka-1212.",
+      "description": "Haque Jahanara Castle is a modern residential development located at House # 5, Road # 1, Block-A, Madani Avenue, East Vatara, Sayeed Nagar, Gulshan, Dhaka-1212. Built on 3.7 Katha of land, the project consists of a single G+5 storied building featuring 11 exclusive apartments and 6 parking spaces. Construction began in December 2015, with the expected handover scheduled for June 2018. Designed for comfortable urban living, Haque Villa offers a peaceful residential environment in a prime Dhaka location\nProject At a Glance\nProject Name\nHaque Villa\nAddress\nHouse # 5, Road # 1, Block-A, Madani Avenue, East Vatara,\nSayeed Nagar, Gulshan, Dhaka-1212\nLand Area\n3.7 Katha\nNumber of Building\n1 Nos\nBuilding Height\nG+5 Floor\nNumber of Apartment\n11 Nos\nParking\n6 Nos\nWork Starts\nDecember, 2015\nExpected Hand Over\nJune, 2018\nSALIENT FEATURES OF THE APARTMENT COMPLEX\nBUILDING ENTRANCE\nSecured Decorative Gate with Lamp Posts as per the elevation & perspective of the building.\nComfortable internal driveway\nGuard Room\nRECEPTION LOBBY (AT GROUND LEVEL)\nReception area\nLight Fittings\nDrivers waiting room\nLIFTS\nInternational Standard Lift (Toshiba / LG / Mitsubishi / Cone or equivalent) Adequate lighting\nFast & reliable service to residents on all floors\n1 (One) Lift of 4 / 6 Persons\nLIFT LOBBIES & STAIRCASES\nSpacious lift lobby in each floor\nFloor tiles in all lift lobbies (RAK Ceramics or equivalent)\nStair tiles in all staircases (RAK Ceramics or equivalent)\nAPARTMENT LAYOUTS\nWill maximize advantages especially in relation to the daylight and outside view.\nPrivacy will be emphasized in designing the layout so that the master and second bedrooms\nare located away from the guest bedroom and main entertainment areas.\nCABLE TV PROVISION\nProvision for connection of satellite dish antenna with multi channel capacity from the commercial cable TV operator.\nGENERATOR\nInternational Standard Generator (Powertec / FG. Wilson / Iveco / Premac or equivalent)\nKVA capacity to cover Lift, Pumps, Common Lights, 1 (one) Light, 1 (one) Fan.\nWATER PUMPS\nOne Units (One standby)\nEuropean Origin Pedrollo or Equivalent.",
+      "image_key": "",
+      "image_url": "/__l5e/assets-v1/68abea7f-c359-4f0b-b9ad-39d86dd849fb/official-25.png",
+      "amenities": [],
+      "facts": {
+        "land": "3.7 Katha",
+        "floors": "G + 5",
+        "apartments": "11",
+        "parking": "6",
+        "work starts": "December 2015",
+        "expected handover": "June 2018"
+      },
+      "is_featured": false,
+      "is_published": true,
+      "sort_order": 5,
+      "map_url": null,
+      "brochure_url": null
+    },
+    {
+      "id": "2c5189e3-1bc9-5f17-85d9-0cc88156681e",
+      "title": "Haque Konok Kuthir",
+      "slug": "haque-konok-kuthir",
+      "location": "Holding no: Plot B-53, Road # 06, Shyamoli Housing Ltd., Shekhertek, Mohammadpur, Dhaka",
+      "status": "Completed",
+      "summary": "Haque Konok Kuthir is a complete, ready and handed over residential project located at Shekhertek, Mohammadpur.",
+      "description": "Haque Konok Kuthir is a complete, ready and handed over residential project located at Shekhertek, Mohammadpur.\nMost of the flats are already sold out, and only a few units are currently available.\nIt is a south-facing project, and all utility facilities are running smoothly and being enjoyed by the flat owners.\nFacilities that are available-\nName of the project\nHaque Konok Kuthir\nAddress of the project:\nHolding no: Plot B-53, Road # 06, Shyamoli Housing Ltd.,\nShekhertek, Mohammadpur, Dhaka\nRunning status:\nComplete ready & handed over project\nLand of the project:\n4.85 Katha\nHeight of the building:\n(G+7) Total 08 storied building\nType of the building:\nComplete residential\nResidential flat:\n1st to 7th floor\nNumber of flats:\n21 Nos\nNumber of car parking:\n07 Nos\nNumber of lift:\n01 No\nNumber of units in each floor:\n03 Nos\nArea of each flat –\nType – A : 1400 Sft. (Approx.)\nType – B : 740 Sft. (Approx.)\nType – C : 750 Sft. (Approx.)\nFeatures of each flat –\nBedroom : 03 / 02 Nos\nKitchen : 01 No\nDining room : 01 No\nToilet : 03 / 02 Nos\nBelcony : 03 / 02 Nos\nLiving room : 01 No",
+      "image_key": "",
+      "image_url": "/__l5e/assets-v1/de3cc388-3310-47bc-90b9-4dd56bbd2de0/official-32.jpg",
+      "amenities": [],
+      "facts": {
+        "land": "4.85 Katha",
+        "floors": "G + 7",
+        "apartments": "21",
+        "parking": "7",
+        "elevators": "1",
+        "size": "740–1,400 sft"
+      },
+      "is_featured": false,
+      "is_published": true,
+      "sort_order": 6,
+      "map_url": null,
+      "brochure_url": null
+    },
+    {
+      "id": "c389dc0f-6f66-5ffd-93b5-936bd34d0bb3",
+      "title": "Haque Taher Tower",
+      "slug": "haque-taher-tower",
+      "location": "Holding no – 170/3, 170/4, 200/6, 200/6/A, 200/7/1 Bhuiyan Goli, West Agargaon, Dhaka",
+      "status": "Ongoing",
+      "summary": "Haque Taher Tower is located near Dhaka Neuroscience Hospital and 60 ft road adjacent residential area.",
+      "description": "Haque Taher Tower is located near Dhaka Neuroscience Hospital and 60 ft road adjacent residential area. This project is the perfect solution for aesthetic and comfortable housing for modern urban life. Built in one of the premium locations of the West Agargaon area, this project is a wonderful combination of peaceful environment and modern civic amenities. Super shop, School, University, Mosque & Restaurant are located around the project. Round-the-clock security system. Since the project work is ongoing, you are getting long-term installment facilities.\nFacilities that are available-\nName of the project\nHaque Taher Tower\nAddress of the project\nHolding no – 170/3, 170/4, 200/6, 200/6/A, 200/7/1\nBhuiyan Goli, West Agargaon, Dhaka\nRunning status\nOngoing project\nLand of the project\n12.62 Katha\nHeight of the building\n(Basement + Ground floor + 9)\nTotal 11 storied building\nType of the building\nComplete residential\nNumber of flats\n45 Nos\nNumber of car parking\n46 Nos\nArea of each flat –\nType – A       : 1635 Sft. (Approx.)\nType – B       : 1398 Sft. (Approx.)\nType – C       : 1454 Sft. (Approx.)\nType – D       : 1450 Sft. (Approx.)\nType – E       : 1572 Sft. (Approx.)\nFeatures of each flat –\nBedroom            : 03 Nos,\nKitchen               : 01 No\nDining room      : 01 No\nToilet                   : 03 Nos\nBelcony               : 03 Nos\nLiving room       : 01 No",
+      "image_key": "",
+      "image_url": "/__l5e/assets-v1/c55259b1-23f6-4821-a85c-7d9f5a563df5/official-36.jpeg",
+      "amenities": [],
+      "facts": {
+        "land": "12.62 Katha",
+        "floors": "B + G + 9",
+        "apartments": "45",
+        "parking": "46",
+        "size": "1,398–1,635 sft"
+      },
+      "is_featured": true,
+      "is_published": true,
+      "sort_order": 7,
+      "map_url": null,
+      "brochure_url": null
+    },
+    {
+      "id": "98ee0aec-6f59-5172-a8d5-8784b3b8a0c8",
+      "title": "Haque Manzil Villa",
+      "slug": "haque-manzil-villa",
+      "location": "Madborbari Jame Masjid Gali, Darussalam, Mirpur, Dhaka",
+      "status": "Ongoing",
+      "summary": "“ Haque Manzil Villa ” is an ideal project for living in a quiet, south-facing 8-storied building located at Darussalam Mirpur.",
+      "description": "“\nHaque Manzil Villa\n” is an ideal project for living in a quiet, south-facing 8-storied building located at Darussalam Mirpur. Living here is comfortable and relaxing due to good communication system and easy availability of all types of vehicles. There are several educational institutions, modern hospitals and good entertainment facilities. Since the construction work of the project is ongoing, you are getting long-term installment facilities.\nProject at a Glance\nProject Name\nHaque Manzil Villa\nProject Address\nMadborbari Jame Masjid Gali, Darussalam, Mirpur, Dhaka\nLand Area\n11.20 Decimal\nFacing\nSouth\nNo. of Building\n01 Nos\nFloors\nGround Floor + 7 Storied\nTotal Height\n(G + 07) = 08 Storied\nBuilding Type\nComplete Residential\nTotal Apartments\n19 Nos\nUnits Per Floor\n03 Nos\nCar Parking\n16 Nos\nElevator\n01 Nos\nWork Start\nMarch 2026\nExpected Hand Over\nSeptember 2029\nUnit Size\nType A – 1250 SFT (Approx.)\nType B – 1210 SFT (Approx.)\nType C – 1050 SFT (Approx.)\nEach Unit Consists Of\nBed : 03 Nos\nVarandah : 03 Nos\nDrawing : 01 No\nDining : 01 No\nKitchen : 01 No\nToilet : 03 Nos\nStair : 01 No\nFeatures & Amenities\nBuilding Entrance\nSpacious entrance with security provisions and proper arrangement for control of incoming and outgoing persons, vehicles and goods.\nReception Lobby\nElegant visitors lounge with mail boxes and stylish register desk for visitor check-in & check-out.\nApartment Layout\nThoughtfully arranged layout ensuring maximum daylight, cross ventilation and privacy.\nBedrooms\nMaster bedrooms include attractive bath fittings, tiled flooring and aluminum tinted glass windows.\nBalconies\nStrategically located balconies with tiled flooring.\nFront Elevation\nModern architectural design with colorful facing tiles and elegant finishing.\nCar Parking & Driveway\nBasement & ground floor parking with pavement tiles, sufficient lighting and ventilation.\nSpecific Main Apartment Features\nTeak wood decorative main entrance door with check viewer & quality lock.\nAll door frames of Mehogoni wood.\nVeneered flush doors with French polish.\nStandard floor tiles.\nSmooth-finish plastic paint with SPD ceiling finish.\nAluminum sliding windows with tinted glass.\nSafety grills in windows.\nConcealed electric, gas & water lines.\nDish antenna & intercom provision.\nGas, water & electric lines in all apartments.\nQuality switches, plugs & sockets.\nElectrical distribution box with circuit breakers.\nProper earthing connection for all outlets.\nTechnical Specifications\nCivil Works\nRCC framed structure.\nRod: RAHIM STEEL / KSRM / RSRM / BSRM / Anwar Ispat (500W TMT).\nCement: Fresh / Tiger / Premier / Shah / Mir / Bashundhara / Metro.\n1st class bricks & quality sand/stone.\nExterior: Snowcem weather coat finish.\nInterior: Plastic paint & SPD ceiling.\nRoof: Lime terracing/pavement tiles.\nFloor Tiles: 20”x20” (RAK / Sheltech / Akij / Fu-wang / MIR / CBC).\nWall Tiles: 8”x12” (Toilet, Kitchen, Lift walls).\nElectrical Features\nConcealed RFL PVC wiring.\nMK brand switches & sockets.\nA/C points in master bedroom & living.\nSeparate electric meter & DB box.\nIntercom system.\nEmergency light points.\nKitchen\nDouble burner gas outlet (burner not included).\nStainless steel sink (RFL).\nGlazed floor & wall tiles.\nProvision for exhaust fan & hood.\nHot & cold water line provision.\nBathrooms\nConcealed water lines.\nStandard quality commode & basin.\nGlazed wall & floor tiles.\nStorage above toilets.\nGeyser plug point in master bath.\nUtility Connections\nSub-station with transformer.\nIndividual DPDC meter.\nWASA water supply & sewerage.\nLift\n01 imported lift (06 persons capacity) with full-height sensor & emergency alarm.\nGenerator\nAuto start/stop generator.\nSupports lift, pump & common lighting.\n02 light & 02 fan points per flat for emergency.\nGarbage Disposal\nManaged by flat owners’ co-operative society.",
+      "image_key": "",
+      "image_url": "/__l5e/assets-v1/628af342-d195-4756-99ef-6f2044a103bd/official-48.png",
+      "amenities": [],
+      "facts": {
+        "land": "11.20 Decimal",
+        "floors": "G + 7",
+        "apartments": "19",
+        "parking": "16",
+        "elevators": "1",
+        "size": "1,050–1,250 sft",
+        "work starts": "March 2026",
+        "expected handover": "September 2029"
+      },
+      "is_featured": false,
+      "is_published": true,
+      "sort_order": 8,
+      "map_url": null,
+      "brochure_url": null
+    },
+    {
+      "id": "e028ae0b-c6a7-5b36-a296-d28600113ca8",
+      "title": "Haque Anwar Yusuf Tower",
+      "slug": "haque-anwar-yusuf-tower",
+      "location": "Holding-08-03, Block-B, Dhaka-Aricha Highway Adjacent Shimultola Bus Stand, Jalesshor, Savar, Dhaka",
+      "status": "Ongoing",
+      "summary": "Haque Anwar Yusuf Tower is located in the center of Savar town, the 20-storied commercial cum residential building adjacent to the Dhaka-Aricha highway is a complete and aesthetic project with all modern amenities.",
+      "description": "Haque Anwar Yusuf Tower is located in the center of Savar town, the 20-storied commercial cum residential building adjacent to the Dhaka-Aricha highway is a complete and aesthetic project with all modern amenities. On the one hand, there is a huge opportunity to do business here, while living is also comfortable and peaceful. The transportation system to Dhaka and surrounding districts is very easy and safe. As the commercial part of the project has Banks, Insurance, Restaurants and entertainment centers, everything will be at your fingertips. The project will have round-the-clock security system including CCTV cameras. Since a huge portion is open in front of the project, there will be good traffic arrangements including car parking. Since the construction work of the project is ongoing, you will get long-term installment facilities.\nFacilities that are available-\nProject Name\nHaque Anwar Yusuf Tower\nProject Address\nHolding-08-03, Block-B, Dhaka-Aricha Highway Adjacent Shimultola Bus Stand, Jalesshor, Savar, Dhaka\nLand Area\n24.77 Katha\nFacing\nMain Road (East)\nNumber of Building\n01 Nos\nTotal Floors\n17 Storied Building\nBasement\n02 Nos\nGround Floor\n01 No\nCommercial Floors\n02 Nos + 07 Corporate Floors\nApartment Floors\n08 Nos\nBuilding Height Structure\nB1 + B2 + G + 17 Floors\nNumber of Apartments\n30 Nos\nStudio Suites\n43 Nos\nCar Parking\nAs per basement provision\nElevators\n06 Nos (04 Corporate & 02 Residential)\nApartment Size\n1050 – 2000 SFT (Approx.)\nCommercial Space Size\n6300 – 8700 SFT (Approx.)\nWork Starts\nJanuary 2022\nExpected Hand Over\nJanuary 2028\nArea of each flat –\nType – A       : 1415 Sft.\nType – B       : 1320 Sft.\nType – C       : 1220 Sft.\nType – D       : 1490 Sft.\nType – E       : 1360 Sft.\nFeatures of each flat –\nBedroom          : 03 Nos,\nKitchen             : 01 No\nDining room    : 01 No\nToilet                 : 03 Nos\nBelcony             : 03 Nos\nLiving room     : 01 No\nStudio apartment at 17\nth\nfloor\nArea of each studio apartment –\nType – A                      : 305 Sft. (Approx.)\nType – B                     : 409 Sft. (Approx.)\nType – C                     : 205 Sft. (Approx.)\nType – D                      : 262 Sft. (Approx.)\nType – E                     : 353 Sft. (Approx.)\nType – F                     : 249 Sft. (Approx.)\nType – G                     : 211 Sft. (Approx.)\nType – H                    : 282 Sft. (Approx.)\nType – I                      : 285 Sft. (Approx.)\nType – J                      : 235 Sft. (Approx.)\nType – K                    : 348 Sft. (Approx.)\nType – L                     : 250 Sft. (Approx.)\nType – M                    : 262 Sft. (Approx.)\nType – N                    : 390 Sft. (Approx.)\nType – O                    : 302 Sft. (Approx.)\nFeatures of a studio apartment-\nBedroom                   : 01 No\nDining cum living   : 01 No\nToilet                         : 01 No\nBelcony                     : 01 No",
+      "image_key": "",
+      "image_url": "/__l5e/assets-v1/c4d4555d-14c2-4674-99d9-fcf706546582/official-55.jpg",
+      "amenities": [],
+      "facts": {
+        "land": "24.77 Katha",
+        "floors": "B1 + B2 + G + 17",
+        "apartments": "30",
+        "studio suites": "43",
+        "elevators": "6",
+        "size": "1,050–2,000 sft",
+        "work starts": "January 2022",
+        "expected handover": "January 2028"
+      },
+      "is_featured": true,
+      "is_published": true,
+      "sort_order": 9,
+      "map_url": null,
+      "brochure_url": null
+    },
+    {
+      "id": "82c594f6-2a54-5bf0-be26-6bd1abf53982",
+      "title": "Emdad Center",
+      "slug": "emdad-center",
+      "location": "Holding no : DNCC Kha-12, Progoti Saroni (Main Road), Shahzadpur, Gulshan, Dhaka (Near USA Embassy)",
+      "status": "Ongoing",
+      "summary": "Emdad Center is the 18-storied residential cum commercial building adjacent to Pragati Sarani, Shahjadpur, Dhaka is a complete and attractive project with all the amenities of modern city life.",
+      "description": "Emdad Center is the 18-storied residential cum commercial building adjacent to Pragati Sarani, Shahjadpur, Dhaka is a complete and attractive project with all the amenities of modern city life. As the project is adjacent to Gulshan, Baridhara and Diplomatic Zone, it’s  security system is secured. Living in here will make one’s life comfortable and relaxed due to the standard educational institutions, hospitals, shopping malls and good communication facility around the project. All the facilities are within one’s reach. There is twenty four hours security system including CCTV cameras. As the construction work of the project is ongoing, one’s will get long-term installment facilities.\nFacilities that are available-\nName of the project\nEmdad Center\nAddress of the project\nHolding no : DNCC Kha-12, Progoti Saroni (Main Road),\nShahzadpur, Gulshan, Dhaka (Near USA Embassy)\nRunning status\nOngoing project\nLand of the project\n13.30 Katha\nHeight of the building\n(Basement-02 + Basement-01 + Ground floor + 15)\nTotal 18 storied building\nType of the building\nCommercial cum Residential\nShop & Commercial space\nGround floor to 9th floor\nResidential floor\n10th to 15th floor\nNumber of flats\n30 Nos\nNumber of car parking\n32 Nos\nNumber of lift\n04 Nos\nArea of each flat –\nType – A       : 1480 Sft. (Approx.)\nType – B       : 1265 Sft. (Approx.)\nType – C       : 1185 Sft. (Approx.)\nType – D       : 1375 Sft. (Approx.)\nType – E       : 920 Sft. (Approx.)\nFeatures of the flat –\nBedroom         : 03 Nos,\nKitchen            : 01 No\nDining room   : 01 No\nToilet                : 03 Nos\nBelcony            : 03 Nos\nLiving room    : 01 No",
+      "image_key": "",
+      "image_url": "/__l5e/assets-v1/c1ee7c44-8d5d-4a8f-9a75-af8975d05cdf/official-69.jpg",
+      "amenities": [],
+      "facts": {
+        "land": "13.30 Katha",
+        "floors": "2B + G + 15",
+        "apartments": "30",
+        "parking": "32",
+        "elevators": "4",
+        "size": "920–1,480 sft"
+      },
+      "is_featured": true,
+      "is_published": true,
+      "sort_order": 10,
+      "map_url": null,
+      "brochure_url": null
+    },
+    {
+      "id": "26a8357d-118a-5496-8ed5-fc547e807c48",
+      "title": "Haque Safa Villa",
+      "slug": "haque-safa-villa",
+      "location": "Holding # 148/6, Modhu Bazar, West Dhanmondi, Dhaka",
+      "status": "Completed",
+      "summary": "Haque Safa Villa is located very close to the Dhanmondi residential area at Modhu Bazar, West Dhanmondi, which is a perfect living for urban life.",
+      "description": "Haque Safa Villa is located very close to the Dhanmondi residential area at Modhu Bazar, West Dhanmondi, which is a perfect living for urban life. It’s a complete project & has been handed over in 2020.\nFacilities that are available-\nName of the project\nHaque Safa Villa\nAddress of the project:\nHolding # 148/6, Modhu Bazar, West Dhanmondi, Dhaka\nPresent status:\nComplete & handed  over the project\nLand of the project:\n4.88 Katha\nHeight of the building:\n(G+6) 07 storied building\nType of the building:\nComplete residential\nNumber of flats:\n12 Nos\nNumber of car parking:\n12 Nos\nNumber of units in each floor\n02 Nos\nArea of each flat –\nType – A       : 1387 Sft.\nType – B       : 1327 Sft.\nFeatures of the flat –\nBedroom     : 03 Nos,\nKitchen : 01 No\nDining room : 01 No\nToilet : 04 Nos\nBelcony : 03 Nos\nLiving room : 01 No",
+      "image_key": "",
+      "image_url": "/__l5e/assets-v1/8ebd763b-10d9-4aa1-b014-0f1ce0717557/official-79.jpg",
+      "amenities": [],
+      "facts": {
+        "land": "4.88 Katha",
+        "floors": "G + 6",
+        "apartments": "12",
+        "parking": "12",
+        "size": "1,327–1,387 sft",
+        "handover": "2020"
+      },
+      "is_featured": false,
+      "is_published": true,
+      "sort_order": 11,
+      "map_url": null,
+      "brochure_url": null
+    }
+  ],
+  "team": [
+    {
+      "id": "9a08167e-5295-53f7-a31b-a1c064a17f90",
+      "name": "Md. Emdadul Haque",
+      "role": "Managing Director",
+      "phone": null,
+      "biography": "Committed to empowering people, strengthening communities, and building homes rooted in reliability, care, and lasting impact.",
+      "image_url": "/__l5e/assets-v1/c7cfc3b9-47a1-4261-8520-b97e8f30fb9a/official-85.png",
+      "is_published": true,
+      "sort_order": 1
+    },
+    {
+      "id": "cd3c976c-eb11-5b07-98cf-4ca396f344aa",
+      "name": "Engr. Jannatul Ferdous",
+      "role": "Chairman",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/a45e3d0e-a0b3-4100-84fe-b1c33d135b7e/official-86.jpg",
+      "is_published": true,
+      "sort_order": 2
+    },
+    {
+      "id": "6c12f216-aa14-5b5c-9c73-16500873abe2",
+      "name": "Md. Momin",
+      "role": "General Manager",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/27881ba9-2c91-43e7-9803-92b13520238b/official-87.jpg",
+      "is_published": true,
+      "sort_order": 3
+    },
+    {
+      "id": "ce055330-ee22-5da2-9a7b-206c0741e65f",
+      "name": "Md. Surujur Rahman",
+      "role": "Sr. AGM",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/4f63b64a-8bd8-4d23-ab8f-236f98581ac9/official-88.jpg",
+      "is_published": true,
+      "sort_order": 4
+    },
+    {
+      "id": "d599124c-5890-5628-950f-19207066d0df",
+      "name": "Provoungshu Kumer Dey",
+      "role": "AGM",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/35c4066b-4fc5-4801-8c77-51fea5dfd3f8/official-89.jpg",
+      "is_published": true,
+      "sort_order": 5
+    },
+    {
+      "id": "b5f095b4-0eef-5dbb-9d53-75cc1bac4889",
+      "name": "Enamul Haq",
+      "role": "Sr. Excutive Officer",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/3cd0eafc-b424-4e33-b206-57537116ce24/official-90.jpeg",
+      "is_published": true,
+      "sort_order": 6
+    },
+    {
+      "id": "0ef1003b-2656-577a-bf78-442ce4dadeb7",
+      "name": "Rehena Akhter",
+      "role": "Head of Human Resource",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/185719c5-f8b2-4c68-b430-bd0ef7a5f49c/official-91.jpg",
+      "is_published": true,
+      "sort_order": 7
+    },
+    {
+      "id": "f893bb6b-d5f9-5d02-b8f6-a145a26f5d81",
+      "name": "Md. Arafat Rahman Noyon",
+      "role": "Sr. Manager (Sales & Marketing)",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/ba5b4030-2907-4c9c-8d12-fa5c3e9dc1df/official-92.jpg",
+      "is_published": true,
+      "sort_order": 8
+    },
+    {
+      "id": "73335e73-e25c-5987-a124-f7efecfd9d8e",
+      "name": "Bithi Khatun",
+      "role": "Sr. Assistant Officer (Accounts)",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/a97bbd83-2505-4318-95cd-7c8186bd77bb/official-93.jpg",
+      "is_published": true,
+      "sort_order": 9
+    },
+    {
+      "id": "7eda4324-633d-5c93-ad2b-b853245cd5fc",
+      "name": "Shilpi Rani Saha",
+      "role": "Sr. Assistant Officer (Legal)",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/d624f83a-b416-4eb8-a2db-3fc151a86b24/official-94.jpg",
+      "is_published": true,
+      "sort_order": 10
+    },
+    {
+      "id": "c25da7a2-6955-57ac-9028-e455ceb2503e",
+      "name": "Md. Nasir Uddin",
+      "role": "Sr. Officer (Admin)",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/4ef3a6ef-f82b-4ed5-8207-2d950c33e165/official-95.jpg",
+      "is_published": true,
+      "sort_order": 11
+    },
+    {
+      "id": "b7b69b57-edef-55e6-bf04-974c613c566e",
+      "name": "Kaniz Fatema Mou",
+      "role": "Assistant Officer",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/0793fbcb-7d2b-47ce-9207-eb974d76727a/official-96.jpg",
+      "is_published": true,
+      "sort_order": 12
+    },
+    {
+      "id": "f27e6c96-300a-5e6e-8466-b8e7df6ee740",
+      "name": "Md. Hakmot Ali",
+      "role": "Sr. Assistant Officer (Accounts)",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/0698d7a4-0bf4-475c-8c57-99e41bf5aa2d/official-97.jpg",
+      "is_published": true,
+      "sort_order": 13
+    },
+    {
+      "id": "25225a03-1f38-51cc-924d-d36db1cc996e",
+      "name": "Md. Abu Hanif",
+      "role": "Sr. Driver",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/1b66c970-1bb9-4f67-92c3-5941770fb6d5/official-98.jpg",
+      "is_published": true,
+      "sort_order": 14
+    },
+    {
+      "id": "ee7cdd80-bd96-596f-9a07-23a03752e185",
+      "name": "Md. Robiul Islam",
+      "role": "Driver",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/ac8dd251-8c85-4c1c-832b-7d68cfa0bcf3/official-99.jpg",
+      "is_published": true,
+      "sort_order": 15
+    },
+    {
+      "id": "b29573a2-7579-52d4-9bc6-04be748a3819",
+      "name": "Md. Delowar Hossain",
+      "role": "Sr. Office Assistant",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/1a876041-eeda-440f-b017-a193e9973ef7/official-100.jpg",
+      "is_published": true,
+      "sort_order": 16
+    },
+    {
+      "id": "fc12d8e6-436d-504c-80fe-833c5c70304c",
+      "name": "Md. Shuvo",
+      "role": "Office Assistant",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/b9f85743-3c85-4449-b30e-8860709a885d/official-101.jpg",
+      "is_published": true,
+      "sort_order": 17
+    },
+    {
+      "id": "aa11015a-b0f6-56ba-8e0e-90a1f304bc66",
+      "name": "Md. Masiur Rahman",
+      "role": "Project Supervisor",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/d16aafc2-1747-4fbc-a656-f47d92a95968/official-102.jpg",
+      "is_published": true,
+      "sort_order": 18
+    },
+    {
+      "id": "421db448-adde-50e2-aefc-4062c06cca3b",
+      "name": "Foyez Hossain",
+      "role": "Sr. Engineer",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/abd496d2-c70d-4a05-b702-0c16663107a8/official-103.jpg",
+      "is_published": true,
+      "sort_order": 19
+    },
+    {
+      "id": "a94c100a-1458-5c4c-95c7-bbde8c6098a7",
+      "name": "Md. Sujaur Rahman",
+      "role": "Sr. Assistant Project Engineer",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/2c395ba4-22a4-4fca-bc6d-795836bf582a/official-104.jpg",
+      "is_published": true,
+      "sort_order": 20
+    },
+    {
+      "id": "bd0d40aa-d333-52d6-9dc9-1de34e239255",
+      "name": "Md. Shahjahan",
+      "role": "Sr. Assistant Project Manager",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/d5d9ac0b-0688-4f51-9734-066445442b2f/official-105.jpg",
+      "is_published": true,
+      "sort_order": 21
+    },
+    {
+      "id": "2d72102a-5f00-5a81-9b76-9a47678473e4",
+      "name": "Md. Johurul Islam",
+      "role": "Assistant Project Manager",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/75d21078-9035-4426-9974-bc748446fb88/official-106.jpg",
+      "is_published": true,
+      "sort_order": 22
+    },
+    {
+      "id": "e6e49387-4813-50e1-8f0d-5844ec592ea1",
+      "name": "Md. Hasibul Hasan",
+      "role": "Assistant Civil Engr.",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/d40ad68e-fbbd-44a5-9f5c-5558c029876a/official-107.jpg",
+      "is_published": true,
+      "sort_order": 23
+    },
+    {
+      "id": "fd408247-ec5f-5878-81b3-e56b262162a6",
+      "name": "Md. Azizur Rahman",
+      "role": "Assistant Project Manager",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/2451bd3c-a9bd-4dda-9715-f494204a7300/official-108.jpg",
+      "is_published": true,
+      "sort_order": 24
+    },
+    {
+      "id": "4261f824-bed4-5e41-88a7-6c23becfe3ba",
+      "name": "Abdur Rahim Sakib",
+      "role": "Assistant Project Manager",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/787a265f-8ca4-4343-b3f0-0b620cdf6a0b/official-109.jpg",
+      "is_published": true,
+      "sort_order": 25
+    },
+    {
+      "id": "9148dea3-7e05-529c-9d3c-f7e39cdf34a5",
+      "name": "khaled Haidar",
+      "role": "Project Assistant",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/13e45035-8674-4116-840c-d60683bbc12d/official-110.jpeg",
+      "is_published": true,
+      "sort_order": 26
+    },
+    {
+      "id": "39842a0b-9891-5c4e-9e53-b0c533c52146",
+      "name": "Md. Towhidul Islam",
+      "role": "Project Manager",
+      "phone": null,
+      "biography": "",
+      "image_url": "/__l5e/assets-v1/654e309a-22b0-4a7d-900b-3d46a28c0998/official-111.jpg",
+      "is_published": true,
+      "sort_order": 27
+    }
+  ],
+  "content": [
+    {
+      "section_key": "contact",
+      "heading": "Contact Us",
+      "body": "Let’s discuss your spaces. Free consultation, budget quotations, latest technologies, and eco-friendly constructions.",
+      "extra": {
+        "email": "admin@haquegroup.com.bd",
+        "emails": [
+          "haquegroup16@gmail.com",
+          "admin@haquegroup.com.bd"
+        ],
+        "phone": "+880 2 9613359",
+        "phones": [
+          "+880 2 9613359",
+          "+880 2 9613251",
+          "+880 967 8771442",
+          "01821978418",
+          "01880 078861",
+          "01715052805",
+          "01821978495"
+        ],
+        "address": "House # 08, Level # 03, Road # 02, Dhanmondi, Dhaka-1205",
+        "map_url": "https://www.google.com/maps?q=House%208%20Road%202%20Dhanmondi%20Dhaka%201205&output=embed",
+        "whatsapp": ""
+      }
+    },
+    {
+      "section_key": "hero",
+      "heading": "Haque Home & Builders Limited",
+      "body": "Apartment doesn’t have to be expensive or complicated. It should be smart and user friendly.",
+      "extra": {
+        "eyebrow": "Modern design solutions",
+        "image": "/__l5e/assets-v1/07423c5a-95e9-44ba-a469-cc17e937d442/official-112.jpg"
+      }
+    },
+    {
+      "section_key": "introduction",
+      "heading": "People at the Core of Our Progress",
+      "body": "Our progress as a company is driven by our people. Every employee, every project, and every home we build carries a shared purpose to strengthen communities, uplift lives, and play our part in the nation’s development.",
+      "extra": {}
+    },
+    {
+      "section_key": "corporate",
+      "heading": "The Team Behind Our Homes",
+      "body": "At every stage of our growth, we have believed that true success comes from investing in people first. When our employees grow in skill, confidence, and purpose, our company grows with them. Their passion, responsibility, and sense of ownership are reflected in every project we deliver and every promise we keep.\n\nEvery home we create carries a shared responsibility. It is a responsibility to build stronger communities, to uplift families, and to provide spaces where people can live with dignity, safety, and peace of mind. We understand that a home is more than a structure—it is where dreams take shape, relationships are built, and futures are secured.\n\nAs a company, we are deeply conscious of our role in the nation’s development. We are committed to building in a way that is sustainable, responsible, and rooted in trust—trust with our customers, our partners, and the communities we serve. Long-term value, ethical practices, and respect for people and the environment guide every decision we make.\n\nLooking ahead, our focus remains clear. By empowering our people and staying true to our values, we aim to contribute meaningfully to the country’s progress while continuing to build homes that stand as symbols of reliability, care, and lasting impact.",
+      "extra": {
+        "image": "/__l5e/assets-v1/c7cfc3b9-47a1-4261-8520-b97e8f30fb9a/official-85.png",
+        "leader": "Md. Emdadul Haque",
+        "role": "Managing Director"
+      }
+    },
+    {
+      "section_key": "mission",
+      "heading": "Sustainable. Responsible. Rooted in trust.",
+      "body": "Long-term value, ethical practices, and respect for people and the environment guide every decision we make.",
+      "extra": {
+        "points": [
+          "Invest in people, skills, confidence, and purpose",
+          "Build stronger communities and uplift families",
+          "Create homes with dignity, safety, and peace of mind",
+          "Contribute meaningfully to the nation’s development"
+        ]
+      }
+    },
+    {
+      "section_key": "services",
+      "heading": "Why Choose Us",
+      "body": "Solutions for every space.",
+      "extra": {
+        "points": [
+          "Building Planning|Smart and efficient planning to turn your ideas into well-structured, future-ready buildings.",
+          "Renovating Space|Upgrade and transform existing spaces with quality craftsmanship and modern finishes.",
+          "Interior Space|Modern interior designs that combine comfort, functionality, and elegant aesthetics.",
+          "Real Estates|Reliable real estate solutions to help you invest, build, and grow with confidence.",
+          "Offices|Customized office solutions designed to maximize space and productivity.",
+          "Free Consultation|Get expert advice and clear guidance to start your project the right way—no cost, no pressure."
+        ]
+      }
+    }
+  ],
+  "affiliations": [
+    {
+      "name": "RAJUK",
+      "logo_url": "/__l5e/assets-v1/4e281db4-6f64-4cd3-a6f0-51f20d652bd7/official-113.png",
+      "website_url": null,
+      "is_published": true,
+      "sort_order": 1
+    },
+    {
+      "name": "REHAB",
+      "logo_url": "/__l5e/assets-v1/ac72d23d-735f-4a83-bc69-4dbc5b3b9a01/official-114.png",
+      "website_url": null,
+      "is_published": true,
+      "sort_order": 2
+    },
+    {
+      "name": "Haque Ceramic Industries Limited",
+      "logo_url": "/__l5e/assets-v1/335b3721-e459-44a1-9c4c-86bab7946743/official-115.png",
+      "website_url": null,
+      "is_published": true,
+      "sort_order": 3
+    },
+    {
+      "name": "S.P. Electronics Limited",
+      "logo_url": "/__l5e/assets-v1/efa5a8e3-982a-44ed-932e-e86f00cf9d3c/official-116.png",
+      "website_url": null,
+      "is_published": true,
+      "sort_order": 4
+    },
+    {
+      "name": "Haque JSP Agro",
+      "logo_url": "/__l5e/assets-v1/dc57f7e1-edd3-4bb0-a552-d4b12643215f/official-117.png",
+      "website_url": null,
+      "is_published": true,
+      "sort_order": 5
+    },
+    {
+      "name": "Haque Ready Mix",
+      "logo_url": "/__l5e/assets-v1/73a1b250-85cd-487d-864f-2c7df3e811d4/official-118.png",
+      "website_url": null,
+      "is_published": true,
+      "sort_order": 6
+    }
+  ]
+}

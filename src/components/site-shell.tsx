@@ -4,6 +4,9 @@ import { useState, type ReactNode } from "react";
 import { Button } from "@/components/ui/button";
 import logoAsset from "@/assets/hbl-logo.png.asset.json";
 
+import { contentSection, textExtra, type ContentRow } from "@/lib/content";
+import { officialContent } from "@/lib/site-data";
+
 const navigation = [
   { label: "Home", to: "/" as const },
   { label: "Corporate", to: "/corporate" as const },
@@ -12,7 +15,9 @@ const navigation = [
   { label: "Contact", to: "/contact" as const },
 ];
 
-export function SiteShell({ children }: { children: ReactNode }) {
+export function SiteShell({ children, content }: { children: ReactNode; content: ContentRow[] }) {
+  const contact = contentSection(content, "contact", officialContent[0]);
+  const whatsapp = textExtra(contact, "whatsapp");
   const [open, setOpen] = useState(false);
   const pathname = useRouterState({ select: (state) => state.location.pathname });
 
@@ -38,11 +43,11 @@ export function SiteShell({ children }: { children: ReactNode }) {
          <div className="mx-auto grid max-w-7xl gap-14 px-5 md:grid-cols-[1.5fr_1fr_1fr] lg:px-8">
            <div><img src={logoAsset.url} alt="HBL logo" className="h-20 w-20 rounded-full bg-background object-contain" /><h2 className="mt-8 max-w-md text-4xl leading-tight">Homes shaped for generations.</h2><p className="mt-5 max-w-sm text-sm leading-7 text-primary-foreground/65">Thoughtful homes, dependable construction, and a commitment that continues well beyond handover.</p></div>
           <div><p className="text-xs font-bold uppercase text-sky">Explore</p><div className="mt-4 grid gap-3 text-sm">{navigation.map((item) => <Link key={item.to} to={item.to} className="text-primary-foreground/70 hover:text-primary-foreground">{item.label}</Link>)}</div></div>
-           <div><p className="text-xs font-bold uppercase text-sky">Visit us</p><p className="mt-4 text-sm leading-7 text-primary-foreground/70">Dhanmondi, Dhaka 1209<br />info@hbl.com.bd<br />+880 1700-000000</p><Button asChild variant="outline" className="mt-6 border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-navy"><Link to="/contact">Make an inquiry <ArrowUpRight/></Link></Button></div>
+           <div><p className="text-xs font-bold uppercase text-sky">Visit us</p><p className="mt-4 text-sm leading-7 text-primary-foreground/70">{textExtra(contact,"address")}<br />{textExtra(contact,"email")}<br />{textExtra(contact,"phone")}</p><Button asChild variant="outline" className="mt-6 border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-navy"><Link to="/contact">Make an inquiry <ArrowUpRight/></Link></Button></div>
         </div>
         <div className="mx-auto mt-12 max-w-7xl border-t border-primary-foreground/15 px-5 pt-6 text-xs text-primary-foreground/50 lg:px-8">© 2026 Haque Home & Builders Limited. All rights reserved.</div>
       </footer>
-       <a href="https://wa.me/8801700000000" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp" className="fixed bottom-5 right-5 z-40 grid h-12 w-12 place-items-center rounded-full bg-success text-success-foreground shadow-lg transition-transform hover:scale-105"><MessageCircle className="h-5 w-5" /></a>
+       {whatsapp && <a href={`https://wa.me/${whatsapp}`} target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp" className="fixed bottom-5 right-5 z-40 grid h-12 w-12 place-items-center rounded-full bg-success text-success-foreground shadow-lg transition-transform hover:scale-105"><MessageCircle className="h-5 w-5" /></a>}
     </div>
   );
 }
