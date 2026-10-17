@@ -7,7 +7,7 @@ import { ParallaxImage } from "@/components/parallax-image";
 import { contentSection, listExtra, textExtra } from "@/lib/content";
 import { demoProjects, officialContent } from "@/lib/site-data";
 import { getPublicContent, getPublicAffiliations, getPublicFaqs, getPublicProjects, getPublicTestimonials } from "@/lib/site.functions";
-import heroImage from "@/assets/hbl-hero.jpg";
+import heroImage from "@/assets/hbl-residential-banner.jpg";
 import interiorImage from "@/assets/hbl-interior.jpg";
 
 export const Route = createFileRoute("/")({
@@ -32,11 +32,11 @@ function Index() {
   const mission = contentSection(content, "mission", officialContent[4]);
   const services = contentSection(content, "services", officialContent[5]);
   return <>
-    <section className="relative min-h-[calc(100svh-10rem)] overflow-hidden bg-navy text-primary-foreground">
-      <ParallaxImage src={textExtra(hero,"image",heroImage)} alt="Contemporary residential architecture in Dhaka" className="absolute inset-0 h-full w-full object-cover opacity-70" />
+    <section className="home-hero relative overflow-hidden bg-navy text-primary-foreground">
+      <ParallaxImage src={heroImage} alt="Architectural illustration of contemporary residences with landscaped gardens" className="absolute inset-0 h-full w-full object-cover" />
       <div className="image-veil absolute inset-0" />
-      <div className="relative mx-auto flex min-h-[calc(100svh-10rem)] max-w-7xl items-end px-5 pb-16 lg:px-8 lg:pb-24">
-        <div className="max-w-4xl reveal"><p className="section-label text-sky">{textExtra(hero,"eyebrow")}</p><h1 className="mt-5 text-5xl leading-tight sm:text-7xl lg:text-8xl">{hero.heading}</h1><p className="mt-8 max-w-xl text-base leading-8 text-primary-foreground/75 sm:text-lg">{hero.body}</p><div className="mt-10 flex flex-wrap gap-3"><Button asChild size="lg"><Link to="/projects">Explore our projects <ArrowRight /></Link></Button><Button asChild variant="outline" size="lg" className="border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-navy"><Link to="/contact">Start a conversation</Link></Button></div></div>
+      <div className="home-hero-content relative mx-auto flex max-w-7xl items-end px-5 pb-16 lg:px-8 lg:pb-20">
+        <div className="max-w-2xl reveal"><p className="section-label text-sky">{textExtra(hero,"eyebrow")}</p><h1 className="mt-5">{hero.heading}</h1><p className="mt-6 max-w-xl text-sm leading-7 text-primary-foreground/90 sm:text-base">{hero.body}</p><div className="hero-actions mt-8 flex flex-wrap gap-3"><Button asChild size="lg" className="bg-sky text-navy hover:bg-sky/90"><Link to="/projects">Explore our projects <ArrowRight /></Link></Button><Button asChild variant="outline" size="lg" className="border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-navy"><Link to="/contact">Start a conversation</Link></Button></div></div>
       </div>
     </section>
 

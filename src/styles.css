@@ -19,8 +19,8 @@
  */
 
 @theme inline {
-  --font-sans: "Work Sans", sans-serif;
-  --font-display: "Instrument Serif", serif;
+  --font-sans: "Poppins", sans-serif;
+  --font-display: "Montserrat", sans-serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -154,13 +154,13 @@
     letter-spacing: 0;
   }
 
-  h1, h2, h3 { font-family: var(--font-display); font-weight: 400; letter-spacing: 0; }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing: 0; }
 }
 
 @utility section-label {
   font-size: 0.72rem;
   font-weight: 800;
-  letter-spacing: 0.14em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -171,7 +171,7 @@
 }
 
 @utility image-veil {
-  background: linear-gradient(90deg, color-mix(in oklab, var(--navy) 94%, transparent), color-mix(in oklab, var(--navy) 30%, transparent), transparent);
+  background: linear-gradient(90deg, color-mix(in oklab, var(--navy) 85%, transparent), color-mix(in oklab, var(--navy) 40%, transparent) 55%, color-mix(in oklab, var(--navy) 8%, transparent));
 }
 
 @utility section-shell {
@@ -183,6 +183,35 @@
 }
 
 html { scroll-behavior: smooth; }
+
+.site-content { min-width: 0; }
+.site-content h1, .site-content h2, .site-content h3 { overflow-wrap: anywhere; text-wrap: balance; }
+.site-content h1 { font-size: 3.5rem; line-height: 1.15; }
+.site-content h2 { font-size: 2.75rem; line-height: 1.2; }
+.site-content p, .site-content a { overflow-wrap: anywhere; }
+.site-content img { max-width: 100%; }
+.home-hero { min-height: min(48rem, calc(100svh - 10rem)); }
+.home-hero-content { min-height: min(48rem, calc(100svh - 10rem)); }
+
+@media (min-width: 80rem) {
+  .site-content h1 { font-size: 4.25rem; }
+  .site-content h2 { font-size: 3.25rem; }
+}
+@media (max-width: 639px) {
+  .site-content h1 { font-size: 2.125rem; line-height: 1.22; }
+  .site-content h2 { font-size: 1.875rem; line-height: 1.25; }
+  .site-content h3 { font-size: 1.25rem; }
+  .home-hero, .home-hero-content { min-height: 36rem; }
+  .home-hero-content { padding-top: 4rem; padding-bottom: 3rem; }
+  .home-hero .image-veil { background: linear-gradient(0deg, color-mix(in oklab, var(--navy) 92%, transparent), color-mix(in oklab, var(--navy) 65%, transparent) 65%, color-mix(in oklab, var(--navy) 12%, transparent)); }
+  .home-hero img { object-position: 62% center; }
+  .home-hero .hero-actions { display: grid; }
+  .site-content section.py-24 { padding-block: 4rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .reveal { animation: reveal 700ms ease-out both; }

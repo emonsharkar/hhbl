@@ -1,5 +1,9 @@
 # HBL website roadmap
 
+- [x] Refresh the home banner and apply Montserrat/Poppins typography
+- [x] Add primary call and floating WhatsApp links
+- [x] Polish and verify public layouts on phones and larger screens
+
 - [x] Import verified Haque Group company information, people, contacts, projects, and media
 - [x] Replace sample public content and verify official content across pages
 
