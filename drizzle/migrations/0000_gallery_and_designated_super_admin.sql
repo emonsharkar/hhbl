@@ -1,0 +1,12 @@
+CREATE TABLE public.gallery_images (id uuid PRIMARY KEY DEFAULT gen_random_uuid(), url text NOT NULL, caption text NOT NULL DEFAULT '', category text NOT NULL DEFAULT 'HBL moments', sort_order integer NOT NULL DEFAULT 0, is_published boolean NOT NULL DEFAULT false, created_at timestamptz NOT NULL DEFAULT now(), updated_at timestamptz NOT NULL DEFAULT now());
+GRANT SELECT ON public.gallery_images TO anon;
+GRANT SELECT, INSERT, UPDATE, DELETE ON public.gallery_images TO authenticated;
+GRANT ALL ON public.gallery_images TO service_role;
+ALTER TABLE public.gallery_images ENABLE ROW LEVEL SECURITY;
+CREATE POLICY "Published gallery images are public" ON public.gallery_images FOR SELECT TO anon, authenticated USING (is_published OR private.has_role(auth.uid()));
+CREATE POLICY "Admins manage gallery images" ON public.gallery_images FOR ALL TO authenticated USING (private.has_role(auth.uid())) WITH CHECK (private.has_role(auth.uid()));
+CREATE TRIGGER gallery_updated_at BEFORE UPDATE ON public.gallery_images FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
+DROP POLICY IF EXISTS "Designated super admin can claim initial role" ON public.user_roles;
+CREATE OR REPLACE FUNCTION public.assign_designated_super_admin() RETURNS trigger LANGUAGE plpgsql SECURITY DEFINER SET search_path = public AS $$ BEGIN IF lower(NEW.email) = 'admin@haque.com' AND NEW.email_confirmed_at IS NOT NULL THEN INSERT INTO public.user_roles(user_id,role) SELECT NEW.id,'super_admin' WHERE NOT EXISTS (SELECT 1 FROM public.user_roles WHERE user_id=NEW.id AND role='super_admin'); END IF; RETURN NEW; END; $$;
+REVOKE ALL ON FUNCTION public.assign_designated_super_admin() FROM PUBLIC,anon,authenticated;
+CREATE TRIGGER assign_designated_super_admin AFTER INSERT OR UPDATE OF email_confirmed_at,email ON auth.users FOR EACH ROW EXECUTE FUNCTION public.assign_designated_super_admin();
