@@ -2,7 +2,7 @@
 
 - [x] Add the supplied organization logo section to the homepage
 - [x] Add and verify the homepage showcase cover and phone layouts
-- [ ] Import the supplied Google Drive folder video and verify showcase player controls — waiting for Google Drive access
+- [ ] Import the supplied Google Drive folder video and verify showcase player controls
 
 - [x] Refresh the home banner and apply Montserrat/Poppins typography
 - [x] Add primary call and floating WhatsApp links
