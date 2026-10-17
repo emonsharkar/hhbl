@@ -1,5 +1,5 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, Building2, Compass, Handshake, ShieldCheck } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ProjectCard } from "@/components/project-card";
@@ -22,13 +22,6 @@ export const Route = createFileRoute("/")({
   ]}), component: Index,
 });
 
-const values = [
-  { icon: ShieldCheck, title: "Integrity", text: "Transparent decisions and accountable delivery at every stage." },
-  { icon: Compass, title: "Design intent", text: "Architecture shaped around comfort, light, privacy, and purpose." },
-  { icon: Building2, title: "Enduring quality", text: "Sound engineering and resilient materials that age with confidence." },
-  { icon: Handshake, title: "Lasting care", text: "Relationships that continue beyond the day you receive your keys." },
-];
-
 function Index() {
   const [projectRows, testimonials, faqs, affiliations, content] = Route.useLoaderData();
   const projects = projectRows;
@@ -39,10 +32,10 @@ function Index() {
   const mission = contentSection(content, "mission", officialContent[4]);
   const services = contentSection(content, "services", officialContent[5]);
   return <>
-    <section className="relative min-h-[calc(100svh-6rem)] overflow-hidden bg-navy text-primary-foreground">
+    <section className="relative min-h-[calc(100svh-10rem)] overflow-hidden bg-navy text-primary-foreground">
       <ParallaxImage src={textExtra(hero,"image",heroImage)} alt="Contemporary residential architecture in Dhaka" className="absolute inset-0 h-full w-full object-cover opacity-70" />
       <div className="image-veil absolute inset-0" />
-      <div className="relative mx-auto flex min-h-[calc(100svh-6rem)] max-w-7xl items-end px-5 pb-16 lg:px-8 lg:pb-24">
+      <div className="relative mx-auto flex min-h-[calc(100svh-10rem)] max-w-7xl items-end px-5 pb-16 lg:px-8 lg:pb-24">
         <div className="max-w-4xl reveal"><p className="section-label text-sky">{textExtra(hero,"eyebrow")}</p><h1 className="mt-5 text-5xl leading-tight sm:text-7xl lg:text-8xl">{hero.heading}</h1><p className="mt-8 max-w-xl text-base leading-8 text-primary-foreground/75 sm:text-lg">{hero.body}</p><div className="mt-10 flex flex-wrap gap-3"><Button asChild size="lg"><Link to="/projects">Explore our projects <ArrowRight /></Link></Button><Button asChild variant="outline" size="lg" className="border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-navy"><Link to="/contact">Start a conversation</Link></Button></div></div>
       </div>
     </section>

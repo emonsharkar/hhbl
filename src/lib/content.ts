@@ -1,8 +1,8 @@
 import type { Json } from "@/integrations/supabase/types";
 
 export type ContentRow = { section_key: string; heading: string; body: string; extra: Json };
-export function contentSection(rows: ContentRow[], key: string, fallback: ContentRow): ContentRow {
-  return rows.find(row => row.section_key === key) ?? fallback;
+export function contentSection(rows: ContentRow[], key: string, fallback: ContentRow | undefined): ContentRow {
+  return rows.find(row => row.section_key === key) ?? fallback ?? { section_key: key, heading: "", body: "", extra: {} };
 }
 export function contentExtras(row: ContentRow | null | undefined): Record<string, Json | undefined> {
   return row?.extra && typeof row.extra === "object" && !Array.isArray(row.extra) ? row.extra : {};
