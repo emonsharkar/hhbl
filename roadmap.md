@@ -1,5 +1,8 @@
 # HBL website roadmap
 
+- [ ] Import verified Haque Group company information, people, contacts, projects, and media
+- [ ] Replace sample public content and verify official content across pages
+
 - [x] Review reference website and agree scope
 - [x] Set up secure content database and access rules
 - [x] Build shared HBL visual system and public pages
