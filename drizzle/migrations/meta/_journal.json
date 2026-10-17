@@ -15,6 +15,13 @@
       "when": 1792219363718,
       "tag": "0001_gallery_public_read_policy",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1792219387187,
+      "tag": "0002_published_content_anonymous_reads",
+      "breakpoints": true
     }
   ]
 }
