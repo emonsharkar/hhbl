@@ -8,7 +8,7 @@ import rehab from "@/assets/partners/rehab.png.asset.json";
 const supplied = [rajuk, ceramic, electronics, agro, readymix, rehab];
 const names = ["RAJUK", "Haque Ceramic Industries Limited", "S.P. Electronics Limited", "Haque JSP Agro", "Haque Ready Mix", "REHAB"];
 
-export function HomePartners({partners=[]}: {partners?: {id:string;name:string;logo_url:string|null}[]}) {
+export function HomePartners({partners=[]}: {partners?: readonly {id:string;name:string;logo_url:string|null}[]}) {
   return <section aria-labelledby="partners-title" className="border-y border-border bg-background py-14 sm:py-20">
     <div className="section-shell">
       <h2 id="partners-title" className="text-center">Best Ranked By</h2>
