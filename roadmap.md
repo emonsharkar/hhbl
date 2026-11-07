@@ -4,6 +4,7 @@
 - [x] Simplify website content controls and gallery selection/uploads
 - [x] Configure secure initial super-admin access for admin@haque.com
 - [x] Verify public gallery and initial account setup screen
+- [x] Let administrators scroll the sidebar independently from dashboard content
 - [ ] Verify authenticated content saves/uploads — awaiting admin@haque.com account creation and email confirmation
 
 - [x] Add the supplied organization logo section to the homepage
