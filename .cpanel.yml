@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/haquegroupcom/public_html/
+    - /bin/cp cpanel/index.html $DEPLOYPATH
+    - /bin/cp cpanel/.htaccess $DEPLOYPATH

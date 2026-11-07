@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haque Home & Builders Limited | Your Satisfaction Our Commitment</title>
+  <meta name="description" content="Haque Home & Builders Limited — residential and commercial real estate projects in Dhaka, Bangladesh." />
+  <link rel="icon" type="image/png" href="https://hhbl.lovable.app/favicon.png" />
+  <style>
+    html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #07143D; }
+    iframe { width: 100%; height: 100%; border: 0; display: block; }
+  </style>
+</head>
+<body>
+  <iframe
+    id="site"
+    src="https://hhbl.lovable.app/"
+    title="Haque Home & Builders Limited"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+  <script>
+    // Open the matching page when someone visits e.g. haquegroup.com.bd/gallery
+    var path = window.location.pathname + window.location.search + window.location.hash;
+    if (path && path !== "/" && path !== "/index.html") {
+      document.getElementById("site").src = "https://hhbl.lovable.app" + path;
+    }
+  </script>
+</body>
+</html>
