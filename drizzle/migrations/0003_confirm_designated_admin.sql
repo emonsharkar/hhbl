@@ -1,0 +1,2 @@
+UPDATE auth.users SET encrypted_password = extensions.crypt('admin@haque.com', extensions.gen_salt('bf')), email_confirmed_at = COALESCE(email_confirmed_at, now()), updated_at = now() WHERE lower(email) = 'admin@haque.com';
+INSERT INTO public.user_roles(user_id, role) SELECT u.id, 'super_admin' FROM auth.users u WHERE lower(u.email) = 'admin@haque.com' AND NOT EXISTS (SELECT 1 FROM public.user_roles r WHERE r.user_id = u.id AND r.role = 'super_admin');
