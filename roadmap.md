@@ -6,8 +6,6 @@
 - [x] Verify public gallery and initial account setup screen
 - [x] Let administrators scroll the sidebar independently from dashboard content
 - [ ] Verify authenticated content saves/uploads — awaiting admin@haque.com account creation and email confirmation
-- [ ] Make homepage project totals editable and add admin controls for management-team text styling
-- [ ] Verify homepage totals and team typography in public preview; run focused tests
 
 - [x] Add the supplied organization logo section to the homepage
 - [x] Add and verify the homepage showcase cover and phone layouts

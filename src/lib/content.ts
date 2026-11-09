@@ -11,10 +11,6 @@ export function textExtra(row: ContentRow | null | undefined, key: string, fallb
   const value = contentExtras(row)[key];
   return typeof value === "string" ? value : fallback;
 }
-export function numberExtra(row: ContentRow | null | undefined, key: string, fallback: number): number {
-  const value = contentExtras(row)[key];
-  return typeof value === "number" && Number.isFinite(value) ? value : fallback;
-}
 export function listExtra(row: ContentRow, key: string): string[] {
   const value = contentExtras(row)[key];
   return Array.isArray(value) ? value.filter((item): item is string => typeof item === "string") : [];
