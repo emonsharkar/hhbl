@@ -6,7 +6,7 @@ import { ProjectCard } from "@/components/project-card";
 import { ParallaxImage } from "@/components/parallax-image";
 import { HomePartners } from "@/components/home-partners";
 import { HomeVideoShowcase } from "@/components/home-video-showcase";
-import { contentSection, listExtra, textExtra } from "@/lib/content";
+import { contentSection, listExtra, numberExtra, textExtra } from "@/lib/content";
 import { demoProjects, officialContent } from "@/lib/site-data";
 import { getPublicContent, getPublicAffiliations, getPublicFaqs, getPublicProjects, getPublicTestimonials } from "@/lib/site.functions";
 import heroImage from "@/assets/hbl-residential-banner.jpg";
@@ -36,6 +36,12 @@ function Index() {
   const headings = contentSection(content, "home_sections", undefined);
   const closing = contentSection(content, "closing", undefined);
   const showcase = contentSection(content, "video_showcase", undefined);
+  const stats = [
+    [numberExtra(intro, "completed_count", projects.filter(project => project.status === "Completed").length), "Completed projects"],
+    [numberExtra(intro, "ongoing_count", projects.filter(project => project.status === "Ongoing").length), "Ongoing projects"],
+    [numberExtra(intro, "upcoming_count", projects.filter(project => project.status === "Upcoming").length), "Upcoming projects"],
+    [numberExtra(intro, "published_count", projects.length), "Published projects"],
+  ] as const;
   return <>
     <section className="home-hero relative overflow-hidden bg-navy text-primary-foreground">
       <ParallaxImage src={textExtra(hero,"banner_image") || heroImage} alt="Architectural illustration of contemporary residences with landscaped gardens" className="absolute inset-0 h-full w-full object-cover" />
@@ -45,7 +51,7 @@ function Index() {
       </div>
     </section>
 
-    <section className="py-24 sm:py-32"><div className="section-shell grid items-center gap-16 lg:grid-cols-[1.1fr_.9fr]"><div><p className="section-label">Our commitment</p><h2 className="mt-5 text-5xl leading-tight sm:text-7xl">{intro.heading}</h2><p className="mt-7 max-w-xl text-base leading-8 text-muted-foreground">{intro.body}</p><Button asChild variant="link" className="mt-6 px-0"><Link to="/corporate">Discover our company <ArrowRight /></Link></Button></div><div className="grid grid-cols-2 gap-px bg-border">{[[String(projects.filter(p=>p.status==="Completed").length),"Completed projects"],[String(projects.filter(p=>p.status==="Ongoing").length),"Ongoing projects"],[String(projects.filter(p=>p.status==="Upcoming").length),"Upcoming projects"],[String(projects.length),"Published projects"]].map(([value,label])=><div key={label} className="bg-background p-8 sm:p-10"><p className="font-display text-5xl text-primary">{value}</p><p className="mt-2 text-sm text-muted-foreground">{label}</p></div>)}</div></div></section>
+    <section className="py-24 sm:py-32"><div className="section-shell grid items-center gap-16 lg:grid-cols-[1.1fr_.9fr]"><div><p className="section-label">Our commitment</p><h2 className="mt-5 text-5xl leading-tight sm:text-7xl">{intro.heading}</h2><p className="mt-7 max-w-xl text-base leading-8 text-muted-foreground">{intro.body}</p><Button asChild variant="link" className="mt-6 px-0"><Link to="/corporate">Discover our company <ArrowRight /></Link></Button></div><div className="grid grid-cols-2 gap-px bg-border">{stats.map(([value,label])=><div key={label} className="bg-background p-8 sm:p-10"><p className="font-display text-5xl text-primary">{value}</p><p className="mt-2 text-sm text-muted-foreground">{label}</p></div>)}</div></div></section>
 
     <section className="bg-navy py-24 text-primary-foreground sm:py-32"><div className="section-shell"><div className="flex items-end justify-between gap-6"><div><p className="section-label text-sky">Selected residences</p><h2 className="mt-5 max-w-3xl text-5xl leading-tight sm:text-7xl">{textExtra(headings,"projects_heading","Spaces with a distinct point of view.")}</h2></div><Button asChild variant="outline" className="hidden border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-navy sm:flex"><Link to="/projects">View all</Link></Button></div><div className="mt-12 grid gap-6 md:grid-cols-3">{projects.filter(project => project.is_featured).slice(0,3).map(project => <ProjectCard key={project.slug} project={project} />)}</div></div></section>
 
