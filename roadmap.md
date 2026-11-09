@@ -1,11 +1,15 @@
 # HBL website roadmap
 
+- [x] Add editable homepage project totals
+- [x] Add team typography controls, remove numbering, and rebalance text sizes
+- [x] Verify administrator saves and public display
+
 - [x] Import supplied gallery photos and add Gallery page/menu
 - [x] Simplify website content controls and gallery selection/uploads
 - [x] Configure secure initial super-admin access for admin@haque.com
 - [x] Verify public gallery and initial account setup screen
 - [x] Let administrators scroll the sidebar independently from dashboard content
-- [ ] Verify authenticated content saves/uploads — awaiting admin@haque.com account creation and email confirmation
+- [ ] Verify authenticated media uploads — uploads not yet exercised; administrator display-setting saves are verified
 
 - [x] Add the supplied organization logo section to the homepage
 - [x] Add and verify the homepage showcase cover and phone layouts

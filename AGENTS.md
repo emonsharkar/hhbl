@@ -19,4 +19,5 @@
 
 - Gallery photos live in gallery_images with admin-only writes and published-only public reads; imported media uses asset pointers and new uploads use managed storage.
 - Editorial settings use labeled recursive fields over site_content extras, keeping non-technical administrators out of JSON.
+- Homepage totals use introduction extras with automatic project-count fallbacks; team typography uses team_intro extras and allowlisted design-system classes so admin changes remain safe and theme-compatible.
 - Initial administration is granted by a database trigger only after the designated account email is confirmed; the browser never inserts privileged roles.
